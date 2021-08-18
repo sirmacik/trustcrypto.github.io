@@ -217,7 +217,7 @@ sub   rsa2048/4DD05FF0 2017-10-10 [E]
 $ onlykey-gpg init "foobar" --subkey
 ```
 
-### Add new user IDs (UIDs) to your OnlyKey GnuPG Identity 
+### Add new user IDs (UIDs) to your OnlyKey GnuPG Identity
 After your main identity is created, you can add new user IDs using the regular GnuPG commands:
 
 ```
@@ -348,12 +348,12 @@ If you wish to switch back to your software keys unset GNUPGHOME.
 ## Installation
 
 ### Windows Install with dependencies
-Currently Windows is not supported directly but may be used with a Linux virtual machine. Another alternative is to use [OpenSSH v8.2](https://docs.crp.to/openssh.html) which supports OnlyKey as a FIDO security key. We are working on additonal options for Windows support.
+Currently Windows is not supported directly but may be used with a Linux virtual machine. Another alternative is to use [OpenSSH v8.2](https://docs.crp.to/openssh.html) which supports OnlyKey as a FIDO security key. We are working on additional options for Windows support.
 
 ### MacOS Install with dependencies
 Python 3.8 and pip3 are required. To setup a Python environment on MacOS we recommend Anaconda [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos)
 ```
-$ brew install libusb
+$ brew install libusb gnupg@2.2
 $ pip3 install onlykey-agent
 ```
 
