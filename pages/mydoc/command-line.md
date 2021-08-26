@@ -134,7 +134,7 @@ Returns slot labels
 A command for setting time on OnlyKey, time is needed for TOTP (Google Authenticator)
 
 #### getkeylabels
-Returns key labels for RSA keys 1-4 and ECC keys 1 -32
+Returns key labels for RSA keys 1-4 and ECC keys 1-16
 
 #### rng [type]
 Access OnlyKey TRNG to generate random numbers:
@@ -259,17 +259,35 @@ Enable or disable challenge for stored keys (SSH/PGP)
 
 ### Key Config Options
 
-#### setkey [key id] [type]
+#### setkey [key slot] [type] [features] [hex key]
 Sets raw private keys and key labels, to set PEM format keys use the OnlyKey App
-  - [key id] must be key number RSA1 - RSA4, ECC1 - ECC16, HMAC1 - HMAC2
+  - [key slot] must be key number RSA1 - RSA4, ECC1 - ECC16, HMAC1 - HMAC2
   - [type] must be one of the following:
     - label - set to have a descriptive key label i.e. My GPG signing key
     - x - X25519 Key Type (32 bytes)
     - n - NIST256P1 Key Type (32 bytes)
     - s - SECP256K1 Key Type (32 bytes)
-    - r - RSA Key Type (NOT CURRENTLY SUPPORTED IN CLI)
+    - 2 - RSA Key Type 2048bits (256 bytes)
+    - 4 - RSA Key Type 4096bits (512 bytes)
     - h - HMAC Key Type (20 bytes)
+  - [features] must be one of the following:
+    - s - Use for signing
+    - d - Use for decryption
+    - b - Use for encryption/decryption of backups
   - For setting keys see examples [here](https://docs.crp.to/command-line.html#writing-private-keys-and-passwords).
+
+#### genkey [key slot] [type] [features]
+Generates random private key on device
+  - [key slot] must be key number ECC1 - ECC16 (only ECC keys supported)
+  - [type] must be one of the following:
+    - x - X25519 Key Type (32 bytes)
+    - n - NIST256P1 Key Type (32 bytes)
+    - s - SECP256K1 Key Type (32 bytes)
+  - [features] must be one of the following:
+    - s - Use for signing
+    - d - Use for decryption
+    - b - Use for encryption/decryption of backups
+  - For generating key see example [here](https://docs.crp.to/command-line.html#writing-private-keys-and-passwords).
 
 #### wipekey [key id]
 Erases key stored at [key id]
@@ -354,7 +372,7 @@ Or you can run commands in an interactive shell like this:
 
 ```
 $ onlykey-cli
-OnlyKey CLI v1.2.5
+OnlyKey CLI v1.2.6
 Press the right arrow to insert the suggestion.
 Press Control-C to retry. Control-D to exit.
 
@@ -499,7 +517,7 @@ Successfully set ECC Key
 *HMAC key must be 20 bytes, h is HMAC type*
 
 
-**Set ECC key in slot 101 to a custom value (Slots 101-116 are available for ECC keys. Supported ECC curves X25519(x), NIST256P1(n), SECP256K1(s))**
+**Set ECC key in slot ECC1 to a custom value (Slots ECC1-ECC16 are available for ECC keys. Supported ECC curves X25519(x), NIST256P1(n), SECP256K1(s))**
 
 $ onlykey-cli
 
@@ -511,6 +529,19 @@ Password/Key: *************************************************************
 Successfully set ECC Key
 
 *ECC key must be 32 bytes, x is X25519 type*
+
+**Genkey Examples**
+
+To set key a device must first be put into config mode.
+
+**Generate ECC key in slot ECC1 to a custom value (Slots ECC1-ECC16 are available for ECC keys. Supported ECC curves X25519(x), NIST256P1(n), SECP256K1(s))**
+
+$ onlykey-cli
+
+OnlyKey> genkey ECC1 x                                                                                                    
+
+Successfully set ECC Key
+
 
 ### Scripting Example
 

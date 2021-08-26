@@ -944,7 +944,7 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 Follow the upgrade guide below to load the latest OnlyKey firmware:
 
-- [**Firmware upgrade guide **](https://docs.crp.to/upgradeguide.html)
+- [**Firmware upgrade guide**](https://docs.crp.to/upgradeguide.html)
 
 If you received a message in the OnlyKey app stating *"This application is designed to work with a newer version of OnlyKey firmware."* or if your OnlyKey has firmware v0.2-beta.6x or earlier follow the link below:
 
