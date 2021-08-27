@@ -261,17 +261,17 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIXzPsm6lkM6xSADnwh/S1IGLlU+dHE8M/xEp2qeol2w
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILb27+QTNo+9+xm1AzvlQHmjWt1XMwokM00xfZPJiUHP <ssh://identity@myhost3|ed25519>
 ```
 
-OnlyKey also stores up to 16 elliptic curve private keys and 4 RSA private keys (SSH Only) that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key, or an OpenSSH key.
+OnlyKey also stores up to 16 elliptic curve private keys (ECC1 - ECC16) and 4 RSA private keys (RSA1 - RSA4) that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key, or an OpenSSH key.
 
 Follow the guide [here](https://docs.crp.to/importpgp.html) to load an existing OpenPGP key or the guide [here](https://docs.crp.to/onlykey-agent.html#load-existing-openssh-private-key-stored-keys) to load an existing OpenSSH key.
 
 By default, when set to "Slot: Auto Load" in the OnlyKey app, OpenPGP or OpenSSH keys are stored as follows:
-- RSA Decryption key (GPG) in slot 1
-- RSA Signing key (SSH/GPG) in slot 2
-- ECC (NIST256P1 and X25519) Decryption key (GPG) in slot 101
-- ECC (NIST256P1 and X25519) Signing key (SSH/GPG) in slot 102
+- RSA Decryption key (GPG) in slot RSA1
+- RSA Signing key (SSH/GPG) in slot RSA2
+- ECC (NIST256P1 and X25519) Decryption key (GPG) in slot ECC1
+- ECC (NIST256P1 and X25519) Signing key (SSH/GPG) slot ECC2
 
-Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots. For example, to set an ECC key in ECC 4 (104) and ECC 5 (105):
+Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots. For example, to set an ECC key in ECC4 and ECC5 :
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp-load1.png)
 
@@ -280,7 +280,7 @@ Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots
 Then to use the stored keys the -sk (signing key) and -dk (decryption key) flags are used like this:
 
 ```
-$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 105 -dk 104 -i publickey.bob@protonmail.com.asc
+$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk ECC5 -dk ECC4 -i publickey.bob@protonmail.com.asc
 ```
 
 ### SSH Agent Quickstart Guide (Stored Keys)
@@ -296,10 +296,10 @@ $ pip3 install onlykey-agent
 Plug in and unlock your OnlyKey and then run:
 
 ```
-$ onlykey-agent identity@myhost -sk 102
+$ onlykey-agent identity@myhost -sk ECC2
 ```
 
-Where identity is your usual SSH user, myhost is the host you want to connect to, and -sk 102 is the signing key to use.
+Where identity is your usual SSH user, myhost is the host you want to connect to, and -sk ECC2 is the signing key to use.
 
 3) You now have the SSH public key for the user and the host you previously selected.
 
@@ -312,12 +312,10 @@ Cut and paste the whole string into your server ~/.ssh/authorized_keys file, you
 4) From now on you can log in to your server using OnlyKey using the following command:
 
 ```
-$ onlykey-agent identity@myhost -c -sk 102
+$ onlykey-agent identity@myhost -c -sk ECC2
 ```
 
 ### GPG Agent Quickstart Guide (Stored Keys)
-
-Note: Currently only ECC OpenPGP keys are supported. RSA OpenPGP key support is on the [roadmap](https://docs.crp.to/onlykey-agent.html#roadmap).
 
 1) After installing [prerequisites](#installation), [loading OpenPGP key](https://docs.crp.to/importpgp.html#loading-keys), and setting [Stored Key User Input Mode](https://docs.crp.to/onlykey-agent.html#setting-stored-key-user-input-mode), install OnlyKey agent on your client machine:
 
@@ -328,10 +326,10 @@ $ pip3 install onlykey-agent
 2) Plug in and unlock your OnlyKey and then run:
 
 ```
-$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -i publickey.bob@protonmail.com.asc
+$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk ECC2 -dk ECC1 -i publickey.bob@protonmail.com.asc
 ```
 
-Where "Bob Smith <bob@protonmail.com>" is your email address from your OpenPGP key, "publickey.bob@protonmail.com.asc" is your OpenPGP public key, -sk 102 is the signing key to use, and -dk 101 is the decryption key to use.
+Where "Bob Smith <bob@protonmail.com>" is your email address from your OpenPGP key, "publickey.bob@protonmail.com.asc" is your OpenPGP public key, -sk ECC2 is the signing key to use, and -dk ECC1 is the decryption key to use.
 
 3) Add export GNUPGHOME=~/.gnupg/onlykey to your .bashrc or other environment file. i.e.
 
@@ -415,7 +413,6 @@ In order for non-root users in Linux to be able to communicate with OnlyKey a ud
 
 In a future release we will be implementing the following features:
 
-- Imported PGP (RSA) keys, this feature will permit using GPG with existing PGP keys that are loaded onto OnlyKey. This feature is not yet implemented.
 - GPG challenge code add on to pass the challenge code to GPG for displaying to the user.
 - Windows support and stand-alone EXE for easy deployment. This feature is not yet implemented, it is possible to use the agent with a Windows subsystem for Linux.
 - Pure Python PGP implementation, this feature will permit use on systems where GPG is not installed. If GPG is not found PGPy will be used for OpenPGP support.
@@ -573,7 +570,7 @@ systemctl --user enable onlykey-gpg-agent.socket
 
 #### X25519
 
-By default OnlyKey agent uses X25519 keys but also supports NIST256P1 and RSA (SSH only) keys.
+By default OnlyKey agent uses X25519 keys but also supports NIST256P1 and RSA keys.
 
 #### NIST256P1
 
@@ -585,7 +582,7 @@ $ onlykey-agent user@host -e nist256p1
 ```
 Stored key:
 ```
-$ onlykey-agent user@host -e nist256p1 -sk 102
+$ onlykey-agent user@host -e nist256p1 -sk ECC2
 ```
 
 2) SSH login in using nist256p1
@@ -596,7 +593,7 @@ $ onlykey-agent -c user@host -e nist256p1
 ```
 Stored key:
 ```
-$ onlykey-agent -c user@host -sk 102 -e nist256p1
+$ onlykey-agent -c user@host -sk ECC2 -e nist256p1
 ```
 
 4) GPG init using nist256p1
@@ -607,7 +604,7 @@ $ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -e nist256p1
 ```
 Stored key:
 ```
-$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -i publickey.bob@protonmail.com.asc -e nist256p1
+$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk ECC2 -dk ECC1 -i publickey.bob@protonmail.com.asc -e nist256p1
 ```
 
 #### RSA
@@ -616,14 +613,14 @@ $ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -i publickey
 
 Stored key:
 ```
-$ onlykey-agent user@host -e rsa -sk 2
+$ onlykey-agent user@host -e rsa -sk RSA2
 ```
 
 2) SSH login in using RSA
 
 Stored key:
 ```
-$ onlykey-agent -c user@host -e rsa -sk 2
+$ onlykey-agent -c user@host -e rsa -sk RSA2
 ```
 
 ### Load Existing OpenSSH Private Key (Stored Keys)
@@ -635,7 +632,7 @@ For the SSH Agent you can [load existing OpenPGP](https://docs.crp.to/importpgp.
 - Enter Passphrase if one is required
 - Put OnlyKey into config mode and select 'Save to OnlyKey'
 
-By default this loads your RSA OpenSSH key into slot 2 or your ECC OpenSSH key into slot 102. To specify a custom slot change 'Slot:' from 'Auto Load' to desired slot number, check 'Signature key' box, click 'Save to OnlyKey':
+By default this loads your RSA OpenSSH key into slot 2 or your ECC OpenSSH key into slot ECC2. To specify a custom slot change 'Slot:' from 'Auto Load' to desired slot number, check 'Signature key' box, click 'Save to OnlyKey':
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openssh.png)
 
