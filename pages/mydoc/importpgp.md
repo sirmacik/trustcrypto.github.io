@@ -19,12 +19,12 @@ For best compatibility we recommend using one of these options:
 
 [Option B](#generating-keys-keybase) - Create RSA OpenPGP key with Keybase
 
-[Option C](#generating-keys-gpg) - Create X25519 OpenPGP key with GPG
+[Option C](#generating-keys-gpg) - Create X25519 OpenPGP or RSA key with GnuPG
 
 |  | OnlyKey WebCrypt | Secure Backup | OnlyKey SSH Agent | OnlyKey GPG Agent | Keybase Support | Protonmail Support |
 |-------|--------|---------|---------|---------|---------|---------|
 | Option A | Yes | Yes | Yes | Yes | Yes | Yes |
-| Option B | Yes | Yes | Yes | No | Yes | No |
+| Option B | Yes | Yes | Yes | Yes | Yes | No |
 | Option C | Yes | Yes | Yes | Yes | Yes | No |
 
 To use an existing OpenPGP key follow the steps in [Exporting Keys](#exporting-keys).
