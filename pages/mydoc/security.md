@@ -42,11 +42,13 @@ When it comes to hardware security there are terms such as tamper resistant, tam
 Additionally, it is important to consider that most security weaknesses are related to issues with the implementation of a secure element. For example, the Ledger hardware wallet was [compromised](https://saleemrashid.com/2018/03/20/breaking-ledger-security-model/) due to their system architecture. Another consideration with secure elements is that an NDA is required by most manufacturers, which requires the device to be closed source and when a vendor discovers a vulnerability the NDA may require that the vulnerability not be publicly disclosed. This sometimes allows vulnerabilities to go unnoticed for years, as was the case with the recent [Infineon RSA key generation vulnerability](https://crocs.fi.muni.cz/public/papers/rsa_ccs17) that affected millions of smart cards and TPMs; "The vulnerability is present in NIST FIPS 140-2 and CC EAL 5+ certified devices since at least the year 2012".
 
 New security issues continue to be identified in closed source security keys and smart cards. Most recently, Google Titan, Yubikey NEO, Feitian, and NXP smart cards (all with the NXP A7005 secure element) suffered a complete security compromise where with physical access an attacker could extract the private key in a matter of hours:
-- [https://www.zdnet.com/article/new-side-channel-attack-can-recover-encryption-keys-from-google-titan-security-keys/](https://www.zdnet.com/article/new-side-channel-attack-can-recover-encryption-keys-from-google-titan-security-keys/)
-- [https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk](https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk)
-- [https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/](https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/)
-- [https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/](https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/)
-- [https://securitygladiators.com/gemalto-smart-cards/](https://securitygladiators.com/gemalto-smart-cards/)
+- [New side-channel attack can recover encryption keys from Google Titan security keys](https://www.zdnet.com/article/new-side-channel-attack-can-recover-encryption-keys-from-google-titan-security-keys/)
+- [YubiKey Security Advisory and Risks. Check your YubiKeys right now.](https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk)
+- [Google recalls some Titan security keys after finding Bluetooth vulnerability](https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/)
+- [Minerva attack can recover private keys from smart cards, cryptographic libraries](https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/)
+- [Gemalto: One Serious Crypto Flaw Has Put Smart Cards To Cloning Risk](https://securitygladiators.com/gemalto-smart-cards/)
+- [Trusted platform module security defeated in 30 minutes, no soldering required](https://arstechnica.com/gadgets/2021/08/how-to-go-from-stolen-pc-to-network-intrusion-in-30-minutes/)
+- [Pew! Pew! Researcher Uses Laser to Steal Data From a Tiny Chip](https://www.pcmag.com/news/pew-pew-researcher-uses-laser-to-steal-data-from-a-tiny-chip)
 
 ### OnlyKey Bug Bounty Program
 
