@@ -2,8 +2,8 @@
 title: OnlyKey SSH/GPG agent
 tags: [OnlyKey, Agent, Python]
 keywords: OnlyKey, Agent
-last_updated: June, 23, 2021
-summary: Using OnlyKey as hardware SSH and GPG agent.
+last_updated: Sep, 14, 2021
+summary: Using OnlyKey as hardware SSH and GnuPG agent.
 sidebar: mydoc_sidebar
 permalink: onlykey-agent.html
 folder: mydoc
@@ -21,7 +21,7 @@ SSH is a popular remote access tool that is often used by administrators and wit
 
 You can do things like sign your emails, git commits, and software packages, manage your passwords (with pass and gopass, among others), authenticate web tunnels and file transfers, and more. Since many 3rd party applications already integrate with SSH and GPG you can use those as well.
 
-{% include tip.html content="[![Use OnlyKey Agent with GnuPG for hardware protected Pass](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pass.gif)]" %}
+![Use OnlyKey Agent with GnuPG for hardware protected Pass](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pass.gif)
 
 ## SSH Agent Quickstart Guide
 
