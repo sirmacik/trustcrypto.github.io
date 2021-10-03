@@ -15,7 +15,7 @@ Modern mobile devices like [iPhone](https://webkit.org/blog/11312/meet-face-id-a
 
 What works well for most mobile users is to use OnlyKey for the first login to a new app. After the first login the app has the option to enable Touch/FaceID to log in from then on. This allows enforcing strong passwords (typed by OnlyKey) and two-factor authentication while also not requiring to plug OnlyKey in each time.
 
-Using OnlyKey for the first login to a new app is easy and no adapter is required for OnlyKey DUO (USB-C) devices. For iPhone a USB-to-Lightning adapter is available [here](https://onlykey.io/collections/accessories-1).
+Using OnlyKey for the first login to a new app is easy and no adapter is required for [OnlyKey DUO](https://onlykey.io/duo) (USB-C) devices. For OnlyKey (USB-A) and iPhone a USB adapter is available [here](https://onlykey.io/collections/accessories-1).
 
 ### Mobile Security Considerations
 
