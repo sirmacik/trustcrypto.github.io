@@ -309,4 +309,8 @@ You should see a message displayed indicating the key was successfully saved to 
 
 You should see a message displayed indicating the key was successfully saved to OnlyKey.
 
+**Loading custom GPG private keys onto OnlyKey**
+
+There are many possible configurations for GPG keys some of which may not be parsable in the OnlyKey app. Advanced configurations such as subkeys with different passphrases than the root keys are parsable using the python script [here](https://github.com/trustcrypto/python-onlykey/blob/master/tests/PGPparseprivate.py).
+
 {% include links.html %}
