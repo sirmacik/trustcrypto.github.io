@@ -58,28 +58,76 @@ $ onlykey-agent identity@myhost -c
 
 You will be prompted for a challenge code, type this on your OnlyKey to complete log in. If you wish to just require any button press to login, in the OnlyKey App -> Preferences choose to [disable challenge code](https://docs.crp.to/usersguide.html#challenge-mode) (device must be in config mode to change setting).
 
-Note: This method can also be used for git push, scp, or other mechanisms that are using SSH as their communication protocol:
+
+### Common SSH Use Cases
+
+#### Start a single SSH session
+
+```
+$ onlykey-agent identity@myhost
+$ onlykey-agent identity@myhost > ~/.ssh/authorized_keys
+$ onlykey-agent identity@myhost -c
+```
+
+#### Start multiple SSH sessions from a sub-shell
+This feature allows using regular SSH-related commands within a subprocess running user's shell. SSH_AUTH_SOCK environment variable is defined for the subprocess (pointing to the SSH agent, running as a parent process). This way the user can use SSH-related commands (e.g. ssh, ssh-add, sshfs, git, hg), while authenticating via the hardware device.
+
+```
+$ onlykey-agent identity@myhost
+$ onlykey-agent identity@myhost -s
+$ ssh server@host
+$ logout
+```
+
+#### Run a command with the agent's environment (subversion, rsync, git)
+This method can also be used for git push, scp, or other mechanisms that are using SSH as their communication protocol, the -- separator is used to separate onlykey-agent's arguments from the SSH command arguments.
 
 ```
 $ onlykey-agent identity@myhost -- COMMAND --WITH --ARGUMENTS
 ```
 
-### Use the key for subversion commits
+**Use the key for subversion commits**
+
 ```
 $ onlykey-agent identity@myhost -- svn commit -m "commit message"
 ```
 
-### Use the key for git clone/pull/fetch/push
-```
-$ onlykey-agent identity@myhost -- git push
-```
-
-### For rsyncing
+**Use the key for git clone/pull/fetch/push**
 ```
 $ onlykey-agent identity@myhost -- rsync -a /path   someuser@somehost:/remote/path
 ```
 
-### Copy a file to an SSH server running in Termux running on an android device
+**Use the key for rsyncing**
+```
+$ onlykey-agent identity@myhost -- rsync -a /path   someuser@somehost:/remote/path
+```
+
+#### Access remote Git/Mercurial repositories
+Export your public key and register it in your repository web interface
+(e.g. [GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)):
+
+$ onlykey-agent -v -e ed25519 git@github.com > ~/.ssh/github.pub
+
+Add the following configuration to your `~/.ssh/config` file:
+
+	Host github.com
+		IdentityFile ~/.ssh/github.pub
+
+Use the following Bash alias for convenient Git operations:
+
+	$ alias ssh-shell='onlykey-agent ~/.ssh/github.pub -v --shell'
+
+Now, you can use regular Git commands under the "SSH-enabled" sub-shell:
+
+	$ ssh-shell
+	$ git push origin master
+
+The same works for Mercurial (e.g. on [BitBucket](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-mercurial-728138122.html)):
+
+	$ ssh-shell
+	$ hg push
+
+#### Copy a file to an SSH server running in Termux running on an android device
 ```
 $ onlykey-agent identity@myhost -- scp -P 8022 /path/somefile.txt 192.168.56.195:/sdcard/
 ```
