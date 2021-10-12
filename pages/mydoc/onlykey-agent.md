@@ -22,6 +22,7 @@ SSH is a popular remote access tool that is often used by administrators and wit
 You can do things like sign your emails, git commits, and software packages, manage your passwords (with pass and gopass, among others), authenticate web tunnels and file transfers, and more. Since many 3rd party applications already integrate with SSH and GPG you can use those as well.
 
 Example shows import (-i) of an existing OpenPGP public key (eccpub.asc) to GnuPG for hardware protected Pass with OnlyKey:
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pass.gif)
 
 ## SSH Agent Quickstart Guide
@@ -102,12 +103,17 @@ $ onlykey-agent identity@myhost -- rsync -a /path   someuser@somehost:/remote/pa
 $ onlykey-agent identity@myhost -- rsync -a /path   someuser@somehost:/remote/path
 ```
 
+**Copy a file to an SSH server running in Termux running on an android device**
+```
+$ onlykey-agent identity@myhost -- scp -P 8022 /path/somefile.txt 192.168.56.195:/sdcard/
+```
+
 #### Access remote Git/Mercurial repositories
 Export your public key and register it in your repository web interface
 (e.g. [GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)):
-
+```
 $ onlykey-agent -v -e ed25519 git@github.com > ~/.ssh/github.pub
-
+```
 Add the following configuration to your `~/.ssh/config` file:
 
 	Host github.com
@@ -127,10 +133,6 @@ The same works for Mercurial (e.g. on [BitBucket](https://confluence.atlassian.c
 	$ ssh-shell
 	$ hg push
 
-#### Copy a file to an SSH server running in Termux running on an android device
-```
-$ onlykey-agent identity@myhost -- scp -P 8022 /path/somefile.txt 192.168.56.195:/sdcard/
-```
 
 ## GPG Agent Quickstart Guide
 
