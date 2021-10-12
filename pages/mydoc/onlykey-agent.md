@@ -112,7 +112,7 @@ $ onlykey-agent identity@myhost -- scp -P 8022 /path/somefile.txt 192.168.56.195
 Export your public key and register it in your repository web interface
 (e.g. [GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)):
 ```
-$ onlykey-agent -v -e ed25519 git@github.com > ~/.ssh/github.pub
+$ onlykey-agent git@github.com > ~/.ssh/github.pub
 ```
 Add the following configuration to your `~/.ssh/config` file:
 
