@@ -2,7 +2,7 @@
 title: Upgrade Guide
 tags: [OnlyKey, Firmware, Upgrade]
 keywords: OnlyKey, Firmware, Upgrade
-last_updated: June, 23, 2021
+last_updated: Jan, 19, 2022
 summary: Follow this guide to upgrade OnlyKey firmware and desktop app
 sidebar: mydoc_sidebar
 permalink: upgradeguide.html
@@ -14,15 +14,16 @@ We are pleased to announce that the latest and greatest OnlyKey software is now 
 
 ## Why Upgrade?
 
-This release has a lot of improvements and new features. Here is the short list of new features in this release:
+This release has a lot of improvements and new features. Here is the list of new features in this release:
 
-- Added support for Authlite for enterprise Windows AD 2-factor
-- Added support for ed25519-sk FIDO2 keys with [OpenSSH](https://docs.crp.to/openssh.html)
-- Fixed compatibility issue with FIDO2 Microsoft accounts and Chrome browser
-- [Improved OnlyKey GPG agent support](https://docs.crp.to/onlykey-agent.html)
-- [Improved WebCrypt support](https://docs.crp.to/webcrypt.html) Now supports X25519 OpenPGP keys.
-- Enhanced FIDO2 support (improved usability and ability to manage individual FIDO2 resident keys)
-- [Improved Sysadmin mode](https://docs.crp.to/usersguide.html#sysadmin-mode) - SysAdmin mode permits OnlyKey to type almost any combination of characters such as Ctrl-Alt-Del, then enter usernames/passwords or system commands.
+- Redesign of app UI
+- Redesign of app slots screen for basic login & advanced configuration
+- Backup verification (there is a button to verify backup file integrity)
+- This release includes support for new features in OnlyKey firmware v2.1.2 
+- - 24 Yubikey OTP Slots
+- - Support for node-onlykey API
+- - FIDO2 Improvements
+- Mac M1 support
 
 ## Backup Before Upgrading
 
@@ -46,12 +47,12 @@ There is a tab named Firmware in the app. This may be used to load the latest fi
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
-- Download <a href="Signed_OnlyKey_2_1_1_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_1_STD.txt">OnlyKey Standard Edition firmware</a>
+- Download <a href="Signed_OnlyKey_2_1_2_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_2_STD.txt">OnlyKey Standard Edition firmware</a>
 - Go to the Firmware tab in the app
 - Follow the instructions in the app to load firmware
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_2_1_1_STD.txt SHA 256 checksum:<br>
-c218a2dc29a1dbb92cf9ccc958bb73ab81d687db0a42c14ab42efd52c165be3c" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_2_1_2_STD.txt SHA 256 checksum:<br>
+61092f5371080649dd435c8df18d2d35778632962184e5d6ba93a3295af8c2c9 %}
 
 <!---
 - Download [OnlyKey Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v2.1.0-prod/Signed_OnlyKey_2_1_0_STD.txt)

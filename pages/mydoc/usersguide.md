@@ -2,7 +2,7 @@
 title: OnlyKey User's Guide
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
-last_updated: Oct, 19, 2020
+last_updated: Jan, 19, 2022
 summary: The OnlyKey user's guide provides step-by-step instructions for configuring and using OnlyKey.
 sidebar: mydoc_sidebar
 permalink: usersguide.html
@@ -41,7 +41,7 @@ There are two options for setting up your OnlyKey.
 
 To complete OnlyKey quick setup follow the instructions below:
 
-- Open a text editor such as notepad on a trusted computer
+- Open a text editor such as Notepad (Windows) or TextEdit (Mac) on a trusted computer
 - Click inside the text editor
 - Insert OnlyKey into the USB port on your computer
 - Hold button #3 on your OnlyKey down for 5+ seconds and then release
@@ -61,11 +61,11 @@ To complete OnlyKey quick setup follow the instructions below:
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
 
-[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey.App.5.3.3.dmg)
+[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.4/OnlyKey.App.5.3.4.dmg)
 
-[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey_5.3.3.exe)
+[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.4/OnlyKey_5.3.4.exe)
 
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey_5.3.3_amd64.deb)
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.4/OnlyKey_5.3.4_amd64.deb)
 
 {% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
@@ -73,7 +73,7 @@ To complete OnlyKey quick setup follow the instructions below:
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 38a20e11e0a3219c874b55c9f41d809c426296041c297e2c3e717ebd35403a25<br>Windows SHA 256 CHECKSUM: 7145b5fddc125b9dd60dc6de261b6ecd0adbdb136caa06274e4c77d461abc3f4<br>Linux SHA 256 CHECKSUM: 10611139e7cb601e49453dd9297aa8be767956c8ff37ebebeae1ac9076008e63<br> [ **Linux App GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/CryptoTrust_LLC_pub.asc) A1D6 4A3B 496C B0F3 6E12 B46F 9A9F 520D 44EA 53D1" %}
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 44257f8a5e4f312c630e976f68608aac03596f2d1c7563f414beeebdf5618688<br>Windows SHA 256 CHECKSUM: d221f4199be048ce5acf4ffc960b0ca60ff8846242a59f61c1a964d356244194<br>Linux SHA 256 CHECKSUM: 09eade68cc05909b8657db123c14a35668289dcfbcb9227d53f5e7e3c6dbfdc5<br> [ **Linux App GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/CryptoTrust_LLC_pub.asc) A1D6 4A3B 496C B0F3 6E12 B46F 9A9F 520D 44EA 53D1" %}
 
 {% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/tooltip.png)" %}
 
@@ -133,7 +133,7 @@ If you lose or forget your PIN then a factory default must be completed on your 
 ## Setting up accounts {#account-setup}
 
 {% include tip.html content="Set aside some time to set up accounts as this can be time consuming the first time you set it up. After you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.<br><br>
-Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://i.vimeocdn.com/video/830893143_640.webp)](https://vimeo.com/372894554)" %}
+Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/set-password.jpeg)](https://vimeo.com/372894554)" %}
 
 ### Configure Basic Login Info {#all-about-slots}
 
@@ -187,69 +187,104 @@ Since OnlyKey types out this information this method works on all computers and 
 
 Another low tech option is to write your labels on a card/paper and carry this in your wallet.
 
-{% include important.html content="Obviously, no sensitive information should be written on card/paper or saved to your slot labels. Just something that helps you remember which account is assigned there." %}
+{% include important.html content="Obviously, no sensitive information should be written on card/paper or saved to your slot labels. Just something that helps you remember which account is assigned to which button." %}
 
 Find out more about [mobile support on-the-go](#android-support)?
 
 Find out more about [TOTP support on-the-go](#google-authenticator-otg)?
 
-**Next, let's assign a username and password to slot 1a.**
+**Next, let's assign a password to slot 1a.**
 
-#### Set up a Slot {#set-up-a-slot}
+#### Set up a Slot (Basic Login) {#set-up-a-slot}
 
-The example configuration shown below would be to set up a username and password to automatically login to the Google page shown below.
+The example configuration shown below would be to set OnlyKey to store our Google account password. 
 
-{% include image.html file="image35.png" max-width="602" %}
+{% include callout.html content="**Step 1.** Click the 1a button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
 
-{% include callout.html content="**Step 1.** To configure OnlyKey to log into the example Google page, Click the 1a button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
-
-{% include image.html file="image24.png" max-width="602" %}
+{% include image.html file="image89.png" max-width="602" %}
 
 {% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
 
 **Now the configuration is saved and shows up in the OnlyKey app as ''Google 1''**
+{% include image.html file="image91.png" max-width="602" %}
+
+{% include callout.html content="**Step 3.** Now to log in we browse to Google login page, if prompted we type our Gmail address and select Next. When presented with the password field we press button #1 on OnlyKey to output the password into the password field." type="default" %}
+
+{% include image.html file="image90.png" max-width="602" %}
 
 {% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.<br><br>Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
-If you need OnlyKey to fill a custom form that does not fit into the template? i.e. You need to perform the following:<br>
+**Next, let's assign a username and password to slot 1b.**
+
+The example configuration shown below would be to set OnlyKey to store our Dropbox username and password. 
+
+{% include callout.html content="**Step 1.** Click the 1b button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
+
+{% include image.html file="image93.png" max-width="602" %}
+
+{% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
+
+**Now the configuration is saved and shows up in the OnlyKey app as ''Dropbox''**
+{% include image.html file="image94.png" max-width="602" %}
+
+{% include callout.html content="**Step 3.** Now to log in we browse to Dropbox login page, click on the username field and hold button #1 (for more than one second) on OnlyKey to output the username and password into the login field." type="default" %}
+
+{% include image.html file="image92.png" max-width="602" %}
+
+#### Set up a Slot (Advanced Login) {#set-up-a-slot-advanced}
+
+While Basic Login covers many login pages there are lots of custom login pages and OnlyKey has features to match those custom login scenerios.
+
+If you need OnlyKey to fill a custom login form that does not fit into the basic login format i.e. You need to perform the following:<br>
+- Enter the Username<br>
+- Press RETURN<br>
+- Wait for website to load next page
+- Enter the password<br>
+- Press RETURN<br>
+<br>
+
+Delays may be set to allow for the web page to load.
+
+{% include callout.html content="**Step 1.** Click the 2a button in the OnlyKey app, select the Ful Configuration (Advanced) tab, click the checkboxes and enter values as shown:" type="default" %}
+
+{% include image.html file="image95.png" max-width="602" %}
+
+{% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
+
+**Now the configuration is saved and shows up in the OnlyKey app as ''Custom Login'**
+{% include image.html file="image96.png" max-width="602" %}
+
+{% include callout.html content="**Step 3.** Now to log in we browse to custom login page, click on the username field and press button #2 on OnlyKey to output the username and press RETURN. OnlyKey then waits 3 seconds for the page to load before entering password into the password field." type="default" %}
+
+While the Advanced Login options cover the majority of login scenerios there still may be some that don't fit the template. If you need OnlyKey to fill a custom login form that does not fit into the template i.e. You need to perform the following:<br>
 - Enter the Username<br>
 - Press TAB<br>
 - Press RETURN<br>
+- Wait for website to load next page
 - Enter the password<br>
 - Press TAB<br>
 - Press RETURN<br>
 <br>
-You can enter ' \t' or ' \r' inline with slot data to type the extra TAB or Return. <br>
-i.e.<br>
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/custom-slot.png)
-<br>
+You can enter ' \t' or ' \r' inline with slot data to type the extra TAB or RETURN and ' \d3' to DELAY 3 seconds. <br>
+{% include image.html file="image97.png" max-width="602" %}
+
+Where in the username field the value is set to:<br>
+```
+onlykey \t  \r  \d3 
+```
 Where in the password field the value is set to:<br>
 ```
- \r password \t  \r
+password \t  \r 
 ```
+
 <br>
 You can chain together multiple ' \t' or ' \r' in the fields.  Its one space to start and one space to end so if your chaining together multiple tabs it would have a double space in between like:
 ```
- \t  \t  \t  \t  \t password \r
+ \t  \t  \t  \t  \t password \r 
 ```
 To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.
 
-#### Test a Slot {#test-a-slot}
-
-Once you set your desired account information to a slot then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
-
-***Common issues:***
-
-*   ***The password is entered before page loads.***
-    *   *Set the delay, usually 2-3 seconds works well but this may not be enough time for slow web pages or slow internet connections.*
-*   ***There is a Captcha required sometimes after password***
-    *   *You can either set the delay to a high value like 8 - 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
-*   ***Everything works fine but I really wish it typed faster.***
-    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
-
-As mentioned earlier, login pages can be different between sites and sometimes even different on the same site. For the second example we will set up another Google login, this one for a Google account where the username is already saved to the website so all you need to do is enter a password. This is the default when you have already logged into Google in the past on a computer.
-
-Additionally, by using the URL field we can have the OnlyKey type the login page URL into the browser and browse to the login page (in this case accounts.google.com). This way a one-touch login is possible. Just select the empty URL field in the browser and the URL is automatically typed out and Return is pressed to browse to the site. Once on the site the password is entered and the login is complete.
+Additionally, by using the URL field in Full Configuration (Advanced) we can have the OnlyKey type the login page URL into the browser and browse to the login page. This way a one-touch login is possible. Just select the empty URL field in the browser and the URL is automatically typed out and Return is pressed to browse to the site. Once on the site loads the password is entered and the login is complete.
 
 {% include tip.html content="Using the URL field provides protection against spear phishing attacks as this provides assurance that the site you are entering your password into is the legitimate site. For example, if you receive an email asking you to log into your account to verify something instead of clicking the link in the email to login you would use OnlyKey to browse to the correct site to login.
 <br>
@@ -260,6 +295,19 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
 {% include image.html file="image72.png" max-width="624" %}
 
 {% include image.html file="image23.png" max-width="602" %}
+
+#### Test a Slot {#test-a-slot}
+
+Once you set your desired account information to a slot then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
+
+***Common issues:***
+
+*   ***The password is entered before page loads.***
+    *   *Set the delay, usually 2-3 seconds works well but this may not be enough time for slow web pages or slow internet connections.*
+*   ***There is a Captcha required sometimes after password***
+    *   *You can either set the delay to a high value like 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
+*   ***Everything works fine but I really wish it typed faster.***
+    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
 
 **These examples illustrate how to use OnlyKey in two real world scenarios. A key takeaway here is that you can configure OnlyKey to automatically do what you would normally do manually. Any combination of the fields shown in the slot configuration may be used or not used to fit login format.**
 
@@ -340,9 +388,9 @@ Chrome Extension available from the Chrome Web Store [here](https://chrome.googl
 
 Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are four different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA OnlyKey will work with most sites that support 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
 
-1) [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](#universal-2nd-factor-u2f)
-2) [OATH TOTP](#google-authenticator-totp)
-3) [Yubico® One-Time Password](#Yubico-one-time-password)
+1) [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](#universal-2nd-factor-u2f)<br>
+2) [OATH TOTP](#google-authenticator-totp)<br>
+3) [Yubico® One-Time Password](#Yubico-one-time-password)<br>
 4) [Challenge-Response](#challenge-response)
 
 #### OATH TOTP (Google Authenticator) {#google-authenticator-totp}
@@ -361,7 +409,7 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 
 *This method of two-factor authentication has some notable advantages over using features like 2nd-step verification where a website will send you an SMS message with a code to enter to login. Now that the background is covered we can set this up on your OnlyKey. No phone or app required for setting this up on your OnlyKey but if you wish to maintain a backup of your two-factor authentication codes it may be a good idea to download the app and scan the QR code as a backup in case you lose your OnlyKey.*
 
-{% include callout.html content="**Step 1. Enable MFA (TOTP) on Website -** If you are unsure if the website you want to setup supports TOTP check [here](http://www.dongleauth.info/). For example to do this for your Google Account you must first enable 2-Step Verification and then you select ''SETUP'' as shown below:" type="default" %}
+{% include callout.html content="**Step 1. Enable MFA (TOTP) on Website -** If you are unsure if the website you want to setup supports TOTP check [here](https://www.dongleauth.com/). For example to do this for your Google Account you must first enable 2-Step Verification and then you select ''SETUP'' as shown below:" type="default" %}
 
 {% include image.html file="image85.png" max-width="582" %}
 
@@ -394,7 +442,7 @@ Once your account has been verified you are all set. You can add a username and 
 
 If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the Google Auth OTP field of the OnlyKey app.
 
-To find out if a specific website is supported there is a full list of websites and wether or not they support 2FA [here](http://www.dongleauth.info/). To see if a certain site is supported see that there is a check next to "One Time Passwords (OTP)"
+To find out if a specific website is supported there is a full list of websites and wether or not they support 2FA [here](https://www.dongleauth.com/). To see if a certain site is supported see that there is a check next to "One Time Passwords (OTP)"
 
 #### TOTP (Google Authenticator) On-The-Go {#google-authenticator-otg}
 
@@ -419,15 +467,13 @@ However, OnlyKey TOTP will work on-the-go without the app running. All you have 
 
 {% include image.html file="image1.png" %}
 
-*   Copy and paste these into the corresponding fields in the OnlyKey App (Advanced Tab).
+*   Copy and paste these into the corresponding fields in the OnlyKey App Full Configuration (Advanced) tab.
 
 {% include image.html file="image62.png" %}
 
-*   Select ''Save to OnlyKey'' to write these values to your OnlyKey
+*   Select ''Set Slot'' to write these values to your OnlyKey
 *   Now your OnlyKey is ready to function in Yubikey® OTP mode
-*   Just select a slot that you wish to use with Yubikey® OTP mode by selecting the radio button and then selecting ''Submit''. The Yubikey® OTP will be generated when the corresponding button is pressed.
-
-{% include image.html file="image56.png" %}
+*   The Yubikey® OTP will be generated when the corresponding button is pressed.
 
 {% include important.html content="Keep in mind that Yubico® OTP is a counter based authenticator so you can have only one authenticator set with the same values. If you provision multiple OnlyKeys or Yubikeys with the same values only one device will work. The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP." %}
 
@@ -463,17 +509,15 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 #### Security Key - FIDO2, FIDO U2F, and WebAuthn {#universal-2nd-factor-u2f}
 
+No setup is required to use OnlyKey as a security key. When registering and authenticating OnlyKey as a security key you will see OnlyKey flash blue. To use OnlyKey as a security key follow the instructions given by the website where you wish to register OnlyKey. When using Onlykey as a security key you will see the light flash blue, press any button on the OnlyKey to register or login to a site. While your device is flashing blue typing is disabled in case you also have a slot set up for basic login. 
+
 The terminology for security keys can be a bit confusing so here are some quick definitions to make sense of it.
 
 When websites use the term security key they typically are referring to one of these:
-- Universal 2nd Factor (FIDO U2F) - Security key is used just as a 2nd factor along with your password.
+- Universal 2nd Factor (FIDO U2F) - Security key is used just as a 2nd factor along with your password. This is what most websites use.
 - FIDO2 - A replacement for FIDO U2F released in 2019, security key may be used as a 2nd factor along with your password or may be used as a passwordless security key on supported applications. Passwordless authentication allows logging in with just a security key and a PIN code.
 
 The term WebAuthn is sometimes used instead of FIDO2, essentially WebAuthn is the web browser standard and is part of the larger FIDO2 project.
-
-OnlyKey works just like any other FIDO2 or FIDO U2F token. The first step to use a security key is to register the key and then once registered you can login to that site with the key.
-
-To use OnlyKey as a security key follow the instructions given by the website where you wish to register OnlyKey. When using Onlykey as a security key you will see the light flash blue, press any button on the OnlyKey to register or login to a site.
 
 {% include tip.html content="If I press an OnlyKey button where a password is already assigned won't OnlyKey type out my password?
 
@@ -500,22 +544,6 @@ One drawback of resident credentials is that physical devices have limited stora
 
 FIDO2 allows support of extensions such as the HMAC SHA1 extension for challenge-response which is supported by OnlyKey.
 
-**One Touch Login**
-
-No setup is required to use OnlyKey as a security key. However, one touch login may be configured to both enter credentials and perform FIDO U2F login with one button press by setting the following:
-
-{% include callout.html content="**Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting ''Submit''." type="default" %}
-
-{% include image.html file="image34.png" %}
-
-{% include callout.html content="**Step 2.** Go to the website that you wish to register a new security token and when you select to register a token you will notice the OnlyKey light flashing blue, on and off. Press the button corresponding to the slot you set to U2F in step 1 to register token." type="default" %}
-
-{% include callout.html content="**Step 3.** Once registered, your token can be used to authenticate by pressing the button. You can also add username and password to this slot to have a one touch login." type="default" %}
-
-{% include tip.html content="There are **two ways to use FIDO U2F** on OnlyKey:<br><br>**1)** Press any button when OnlyKey flashes blue to register/login (no set up required)<br><br>**2)** One Touch Login. i.e. Set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:<br>
-![U2F Example](https://docs.crp.to/images/u2f-slot.jpeg)
-<br><br>Now you can register your security key by pressing button 1. But won't it type out my information while registering? No, while your device is flashing blue you can press the button to register and typing is disabled. Once your security key is registered you can log out and now you have a one touch login configured:<br>- Automatically type out and browse to login page (https://www.dropbox.com/login).<br>- Three second delay ensures login page has time to load, this can be increased if using slow internet connections.<br>- Username and password are entered in login field.<br>- Two second delay ensures security key page has time to load.<br>- U2F authentication completes automatically." %}
-
 #### Challenge-Response {#challenge-response}
 
 Challenge response is a form of authentication where an application sends a unique challenge and OnlyKey sends back an HMACSHA1 response. This response may be used for things like encryption of data which is used by software such as [KeePassXC](#keepassxc). OnlyKey flashes yellow when a challenge is received and user presses any button on OnlyKey to authorize the response. OnlyKey supports customizable "HMAC User Input Mode" which allows the user to select if button press is required for challenge-response.
@@ -532,7 +560,9 @@ For example, a random secret key may be generated and loaded into slots 1 and 2 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal2.png)
 
 The same secret key may be loaded into HMAC slots 1 and 2 using the OnlyKey App. Make sure to pad the end with 0s like this:
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/hmacload.png)
+
 You will see a success message in the app "Last message received: Successfully set" indicating it loaded successfully
 
 This may also be loaded into slots 1 (130 in CLI) and 2 (129 in CLI) using the [OnlyKey CLI](https://docs.crp.to/command-line.html).
