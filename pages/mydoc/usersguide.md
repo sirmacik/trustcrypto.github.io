@@ -220,12 +220,12 @@ The example configuration shown below would be to set OnlyKey to store our Dropb
 
 {% include callout.html content="**Step 1.** Click the 1b button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
 
-{% include image.html file="image93.png" max-width="602" %}
+{% include image.html file="image93.png" max-width="800" %}
 
 {% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
 
 **Now the configuration is saved and shows up in the OnlyKey app as ''Dropbox''**
-{% include image.html file="image94.png" max-width="602" %}
+{% include image.html file="image94.png" max-width="800" %}
 
 {% include callout.html content="**Step 3.** Now to log in we browse to Dropbox login page, click on the username field and hold button #1 (for more than one second) on OnlyKey to output the username and password into the login field." type="default" %}
 
@@ -247,12 +247,12 @@ Delays may be set to allow for the web page to load.
 
 {% include callout.html content="**Step 1.** Click the 2a button in the OnlyKey app, select the Ful Configuration (Advanced) tab, click the checkboxes and enter values as shown:" type="default" %}
 
-{% include image.html file="image95.png" max-width="602" %}
+{% include image.html file="image95.png" max-width="800" %}
 
 {% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
 
 **Now the configuration is saved and shows up in the OnlyKey app as ''Custom Login'**
-{% include image.html file="image96.png" max-width="602" %}
+{% include image.html file="image96.png" max-width="800" %}
 
 {% include callout.html content="**Step 3.** Now to log in we browse to custom login page, click on the username field and press button #2 on OnlyKey to output the username and press RETURN. OnlyKey then waits 3 seconds for the page to load before entering password into the password field." type="default" %}
 
@@ -266,7 +266,7 @@ While the Advanced Login options cover the majority of login scenerios there sti
 - Press RETURN<br>
 <br>
 You can enter ' \t' or ' \r' inline with slot data to type the extra TAB or RETURN and ' \d3' to DELAY 3 seconds. <br>
-{% include image.html file="image97.png" max-width="602" %}
+{% include image.html file="image97.png" max-width="800" %}
 
 Where in the username field the value is set to:<br>
 ```
@@ -292,9 +292,9 @@ Additionally, by using the URL field in Full Configuration (Advanced) we can hav
 
 **The example configuration shown below would be to set up a URL and password to automatically login to the Google page shown below. Notice that the username is already remembered by the website, so there is not a need to set this in the OnlyKey slot.**
 
-{% include image.html file="image72.png" max-width="624" %}
+{% include image.html file="image72.png" max-width="800" %}
 
-{% include image.html file="image23.png" max-width="602" %}
+{% include image.html file="image23.png" max-width="800" %}
 
 #### Test a Slot {#test-a-slot}
 
@@ -425,7 +425,7 @@ Selecting ''CAN'T SCAN IT'' will display the private code. Select this text and 
 
 Now open the OnlyKey App and unlock your OnlyKey. Select the Slot to configure and paste this code into the field located next to ''Google Auth OTP'' as shown below:
 
-{% include image.html file="image65.png" max-width="599" %}
+{% include image.html file="image65.png" max-width="800" %}
 
 Once you click submit your OnlyKey is ready to generate OTPs.
 
@@ -437,7 +437,7 @@ Once you click submit your OnlyKey is ready to generate OTPs.
 
 Once your account has been verified you are all set. You can add a username and password to this slot so that you can do a one touch login. Keep in mind that the page may take a second or two to load where your 6 digit OTP is entered so set the delay accordingly, 4 - 5 seconds delay should work in most cases.
 
-{% include image.html file="image37.png" max-width="600" %}
+{% include image.html file="image37.png" max-width="800" %}
 
 
 If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the Google Auth OTP field of the OnlyKey app.
@@ -681,7 +681,7 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 {% include callout.html content="**Step 4.** Copy and paste the key into the Google Auth OTP field of the OnlyKey app for the slot that you want to set up." type="default" %}
 
-{% include image.html file="image53.png" max-width="600" %}
+{% include image.html file="image53.png" max-width="800" %}
 
 {% include callout.html content="**Step 5.** Make sure to check the radio button next to Google Auth OTP and select Submit." type="default" %}
 
@@ -940,7 +940,7 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 
 {% include callout.html content="**Step 3.** Click inside the Backup data box and then hold down the 1 button on your OnlyKey for 5 seconds or more and then release. This will type out an encrypted backup of your OnlyKey configuration into the box. Select save file to save the backup file which has a timestamp so you can keep track of the latest backup file." type="default" %}
 
-{% include image.html file="image78.png" max-width="650" %}
+{% include image.html file="image78.png" max-width="800" %}
 
 {% include tip.html content="Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey app and select a higher setting, 9 usually works well" %}
 
