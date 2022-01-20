@@ -2,7 +2,7 @@
 title: OnlyKey Command-Line Utility
 tags: [OnlyKey, Command line, Python]
 keywords: OnlyKey, Command line
-last_updated: Jun, 03, 2021
+last_updated: Jan, 19, 2022
 summary: The OnlyKey Command-Line Utility is a command line interface to OnlyKey.
 sidebar: mydoc_sidebar
 permalink: command-line.html
@@ -234,7 +234,7 @@ Enable or disable challenge for stored keys (SSH/PGP)
 ### Slot Config Options
 
 #### setslot [id] [type] [value]
-  - [id] must be slot number 1a - 6b
+  - [id] must be slot number 1a - 6b for OnlyKey or 1-24 for OnlyKey DUO
   - [type] must be one of the following:
     - label - set slots (1a - 6b) to have a descriptive label i.e. My Google Acct
     - url - URL to login page
@@ -255,7 +255,7 @@ Enable or disable challenge for stored keys (SSH/PGP)
     - addchar5 - Additional character after OTP 2 for RETURN
 
 #### wipeslot [id]
-  - [id] must be slot number 1a - 6b
+  - [id] must be slot number 1a - 6b for OnlyKey or 1-24 for OnlyKey DUO
 
 ### Key Config Options
 
@@ -372,7 +372,7 @@ Or you can run commands in an interactive shell like this:
 
 ```
 $ onlykey-cli
-OnlyKey CLI v1.2.6
+OnlyKey CLI v1.2.8
 Press the right arrow to insert the suggestion.
 Press Control-C to retry. Control-D to exit.
 
