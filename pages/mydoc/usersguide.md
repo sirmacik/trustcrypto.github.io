@@ -13,9 +13,9 @@ folder: mydoc
 <i class="fa fa-arrow-down fa-3x"></i>
 ## Start Here - Unpacking OnlyKey {#unpacking}
 
-{% include image.html file="packaging.jpeg" max-width="800" %}
-
 {% include callout.html content="**Step 1.** Remove the OnlyKey and the metal quick-connect keychain from packaging." type="default" %}
+
+{% include image.html file="packaging.jpeg" max-width="450" %}
 
 {% include callout.html content="**Step 2.** Attach the quick-connect to the OnlyKey, the other end of the quick-connect can be attached to your keyring." type="default" %}
 
@@ -201,7 +201,7 @@ The example configuration shown below would be to set OnlyKey to store our Googl
 
 {% include callout.html content="**Step 1.** Click the 1a button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
 
-{% include image.html file="image89.png" max-width="602" %}
+{% include image.html file="image89.png" max-width="800" %}
 
 {% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
 
