@@ -47,7 +47,7 @@ There is a tab named Firmware in the app. This may be used to load the latest fi
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
-- Download <a href="Signed_OnlyKey_2_1_2_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_2_STD.txt">OnlyKey Standard Edition firmware</a>
+- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v2.1.2-prod/Signed_OnlyKey_2_1_2_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_2_STD.txt">OnlyKey Standard Edition firmware</a>
 - Go to the Firmware tab in the app
 - Follow the instructions in the app to load firmware
 
