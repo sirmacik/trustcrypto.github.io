@@ -124,7 +124,8 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 
 ### LED DEFINITIONS {#led-definitions-onlykey-color}
 
-*   Steady green light = Unlocked
+*   Steady green light = Unlocked first profile
+*   Steady blue light = Unlocked second profile
 *   No light = Locked
 *   Single yellow flash = Button pressed for PIN entry
 *   3 red flashes = Wrong PIN
@@ -134,8 +135,16 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 *   Blue blink on/off = FIDO2 request
 *   Purple fade in and fade out - Private key signing request (SSH or PGP)
 *   Turquoise fade in and fade out - Private key decryption request
+*   Yellow fade in and fade out - HMAC challenge request
 *   Red fade in and fade out - Device is in [config mode](https://docs.crp.to/security.html#config-mode)
 *   Steady white light - Device is in bootloader mode, use the OnlyKey app to [load firmware](https://docs.crp.to/usersguide.html#loading-onlykey-firmware).
+
+**ONLYKEY DUO ONLY**
+
+*   Steady green light = Unlocked first profile
+*   Steady blue light = Unlocked second profile
+*   Steady yellow light = Unlocked third profile
+*   Steady purple light = Unlocked forth profile
 
 ### Button Definitions {#button-definitions}
 
