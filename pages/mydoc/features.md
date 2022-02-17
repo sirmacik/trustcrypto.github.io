@@ -144,7 +144,7 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 *   Steady green light = Unlocked first profile
 *   Steady blue light = Unlocked second profile
 *   Steady yellow light = Unlocked third profile
-*   Steady purple light = Unlocked forth profile
+*   Steady purple light = Unlocked fourth profile
 
 ### Button Definitions {#button-definitions}
 
