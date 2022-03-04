@@ -49,13 +49,13 @@ If you wish to use your OnlyKey as a hardware password manager, enable other met
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to OnlyKey setup below***
 
-### OnlyKey Setup Using OnlyKey App {#onlykey-setup}
+### Setup Using OnlyKey App {#onlykey-setup}
 
 {% include callout.html content="**Step 1.** Insert OnlyKey DUO" type="default" %}
 
 {% include tip.html content="If you would like to set advanced features such as a device PIN, select the advanced checkbox" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config1-duo.png)
 
 {% include callout.html content="**Step 2.** Select [Next] and follow the instructions to enter a backup passphrase" type="default" %}
 
@@ -67,11 +67,13 @@ If you wish to use your OnlyKey as a hardware password manager, enable other met
 
 Your device is now set up and will automatically reboot. 
 
+{% include tip.html content="If you ever need to wipe and restore your OnlyKey DUO to factory defaults you can do that by holding down button #1 on device for 10 seconds (device will flash red) then hold down button #2 for 20 seconds. All data on your device will be wiped and you can go through setup again." %}
+
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup accounts below***
 
 ## Setting up accounts {#account-setup}
 
-Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/set-password.jpeg)](https://vimeo.com/372894554)" %}
+Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/set-password.jpeg)](https://vimeo.com/372894554)
 
 ### Configure Basic Login Info {#all-about-slots}
 
@@ -91,17 +93,18 @@ The Slots area of the application is where you will set up things like passwords
 
 {% include callout.html content="**Step 2.** Enter a label such as Gmail in the Label field, check the box next to Label, and click Submit." type="default" %}
 
-{% include image.html file="image36.png" %}
+{% include image.html file="image36-duo.png" %}
 
 *Now the label you entered is assigned to slot 1a in the default green profile. Slot labels are helpful if you forget which button is assigned to which account you can open the OnlyKey app at any time to see how it is set up.*
 
-{% include image.html file="image66.png" %}
+{% include image.html file="image66-duo.png" %}
 
 #### OnlyKey On-The-Go {#otg}
 
 **What if I am using a computer without the OnlyKey app?**
 
-Open a text editor and then hold down the 2 button on OnlyKey for 5+ seconds. OnlyKey will type out your slot labels which may look something like this:
+Open a text editor and then hold down the 2 button on OnlyKey for 5+ seconds. OnlyKey will type out the slot labels you have set which may look something like this:
+
 GREEN
 1a Google<br>
 2a Bank<br>
@@ -147,16 +150,20 @@ The example configuration shown below would be to set OnlyKey to store our Googl
 
 {% include callout.html content="**Step 1.** Click the 1a button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
 
-{% include image.html file="image89.png" max-width="800" %}
+{% include image.html file="image89-duo.png" max-width="800" %}
 
 {% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
 
 **Now the configuration is saved and shows up in the OnlyKey app as ''Google 1''**
-{% include image.html file="image91.png" max-width="602" %}
+{% include image.html file="image91-duo.png" max-width="602" %}
 
 {% include callout.html content="**Step 3.** Now to log in we browse to Google login page, if prompted we type our Gmail address and select Next. When presented with the password field we press button #1 on OnlyKey to output the password into the password field." type="default" %}
 
 {% include image.html file="image90.png" max-width="602" %}
+
+OnlyKey types your passwords for you so it will work on any device, even on mobile devices.
+
+{% include image.html file="mobile.gif" %}
 
 If you would like to learn more about setting usernames, passwords, and filling custom login forms check out [Set up a Slot (Advanced Login)](#set-up-a-slot-advanced)
 
@@ -223,7 +230,7 @@ Selecting ''CAN'T SCAN IT'' will display the private code. Select this text and 
 
 {% include image.html file="image38.png" max-width="383"%}
 
-Now open the OnlyKey App and unlock your OnlyKey. Select the Slot to configure and paste this code into the field located next to ''Google Auth OTP'' as shown below:
+Now open the OnlyKey App and unlock your OnlyKey. Select the Slot to configure and paste this code into the field located next to ''OATH-TOTP (Google Authenticator)'' as shown below:
 
 {% include image.html file="image65.png" max-width="800" %}
 
@@ -235,12 +242,7 @@ Once you click submit your OnlyKey is ready to generate OTPs.
 
 {% include image.html file="image75.png" max-width="324" %}
 
-Once your account has been verified you are all set. You can add a username and password to this slot so that you can do a one touch login. Keep in mind that the page may take a second or two to load where your 6 digit OTP is entered so set the delay accordingly, 4 - 5 seconds delay should work in most cases.
-
-{% include image.html file="image37.png" max-width="800" %}
-
-
-If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the Google Auth OTP field of the OnlyKey app.
+If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the OATH-TOTP (Google Authenticator) field of the OnlyKey app.
 
 To find out if a specific website is supported there is a full list of websites and wether or not they support 2FA [here](https://www.dongleauth.com/). To see if a certain site is supported see that there is a check next to "One Time Passwords (OTP)"
 
@@ -311,6 +313,8 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 No setup is required to use OnlyKey as a security key. When registering and authenticating OnlyKey as a security key you will see OnlyKey flash blue. To use OnlyKey as a security key follow the instructions given by the website where you wish to register OnlyKey. When using Onlykey as a security key you will see the light flash blue, press any button on the OnlyKey to register or login to a site. While your device is flashing blue typing is disabled in case you also have a slot set up for basic login. 
 
+{% include image.html file="fido2.gif" %}
+
 The terminology for security keys can be a bit confusing so here are some quick definitions to make sense of it.
 
 When websites use the term security key they typically are referring to one of these:
@@ -374,7 +378,7 @@ Setting the same HMAC key (40 characters, 20 bytes hex) allows OnlyKey/Yubikey d
 
 {% include note.html content="OnlyKey DUO by default has no device PIN required and when no device PIN is set allows users to set static passwords or multi-factor authentication to slots. This limitation only applies when OnlyKey DUO has no device PIN, to enable full features and perform advanced logins set a device PIN in the ''Setup'' tab of the OnlyKey App. This device PIN provides physical security in the event the OnlyKey DUO is lost or stolen" %}
 
-*Once OnlyKey DUO is PIN protected multiple values can be set to a slot, let's assign a username AND password to slot 1b.**
+**Once OnlyKey DUO is PIN protected multiple values can be set to a slot, let's assign a username AND password to slot 1b.**
 
 The example configuration shown below would be to set OnlyKey to store our Dropbox username and password. 
 
@@ -385,7 +389,7 @@ The example configuration shown below would be to set OnlyKey to store our Dropb
 {% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
 
 **Now the configuration is saved and shows up in the OnlyKey app as ''Dropbox''**
-{% include image.html file="image94.png" max-width="800" %}
+{% include image.html file="image94-duo.png" max-width="800" %}
 
 {% include callout.html content="**Step 3.** Now to log in we browse to Dropbox login page, click on the username field and hold button #1 (for more than one second) on OnlyKey to output the username and password into the login field." type="default" %}
 
@@ -412,7 +416,7 @@ Delays may be set to allow for the web page to load.
 {% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
 
 **Now the configuration is saved and shows up in the OnlyKey app as Custom Login**
-{% include image.html file="image96.png" max-width="800" %}
+{% include image.html file="image96-duo.png" max-width="800" %}
 
 {% include callout.html content="**Step 3.** Now to log in we browse to custom login page, click on the username field and press button #2 on OnlyKey to output the username and press RETURN. OnlyKey then waits 3 seconds for the page to load before entering password into the password field." type="default" %}
 
@@ -652,54 +656,6 @@ DashLane supports Google Authenticator, Yubico® OTP, and Security Keys. The sec
 
 SmartLock is a password manager that is available in Google Chrome, it supports Google Authenticator and Security Keys. The security key (FIDO2 / U2F) option is the most secure option.
 
-## OpenPGP File Encryption {#openpgp}
-
-OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. There are two ways to use OnlyKey with OpenPGP.
-
-1) **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** - Provides a way to securely use OnlyKey for OpenPGP in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. This provides encryption everywhere on-the-go and supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+). More information on mobile support [here](https://docs.crp.to/mobile.html).
-2) **[OnlyKey GPG Agent](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide)** - Provides a way to securely use OnlyKey for OpenPGP on a local computer. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use GPG to do things like sign emails, git commits, software packages etc.
-
-{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
-
-{% include note.html content="Private keys are securely stored on OnlyKey and are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. Additionally, physical user presence is required to process secure messages/files. This is in contrast to Smart Cards which only require a PIN code that can be captured and replayed without physical user presence." %}
-
-### How WebCrypt works {#openpgp-how}
-
-{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase search tool to search Keybase users by:<br>
-- Twitter, Github, Reddit, or Hackernews Usernames<br>
-- Web domains<br>
-- PGP fingerprint<br>
-- Or Automatically search for best match" type="default" %}
-
-{% include image.html file="user-search.jpg" %}
-
-{% include callout.html content="**Step 2. Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to [https://apps.crp.to/encrypt](https://apps.crp.to/encrypt) to send a secure message or browse to [https://apps.crp.to/encrypt-file](https://apps.crp.to/encrypt-file) to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username as the recipient. " type="default" %}
-
-{% include image.html file="webcrypt1.png" %}
-
-{% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to [https://apps.crp.to/decrypt](https://apps.crp.to/decrypt) or [https://apps.crp.to/decrypt-file](https://apps.crp.to/decrypt-file). " type="default" %}
-
-{% include image.html file="webcrypt2.png" %}
-
-{% include tip.html content="
-You can receive encrypted messages and files from anyone, no tech skills are required!<br><br>
-Receiving encrypted files is as easy as putting a custom link in your email signature:<br><br>
-**Bob Smith**<br>
-**Email:** Bobsmith@bobsmith.com<br>
-**Phone:** 111.222.3333<br>
-*Send me a secure [message](https://apps.crp.to/app/encrypt?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/app/encrypt-file?type=e&recipients=bobsmith2)*<br>
-*[More info](https://onlykey.io/pages/webcrypt)*<br>
-<br>
-- Link the text **'message'** to: https://apps.crp.to/app/encrypt?type=e&recipients=<mark>bobsmith2</mark>
-<br><br>
-- Link the text **'file'** to: https://apps.crp.to/app/encrypt-file?type=e&recipients=<mark>bobsmith2</mark>
-<br><br>
-- Change <mark>bobsmith2</mark> in the link to your Keybase user name
-<br><br>
-- Add a **'More info'** link to: https://onlykey.io/pages/webcrypt<br>
-This link provides information to let your sender know what WebCrypt is, why it's secure, and includes a quick 30 second video that will shows how to use it.<br>
-[![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
-
 ## Preferences {#preferences}
 
 OnlyKey has several customizable preferences that can be accessed from the preferences tab of the configuration app.
@@ -869,7 +825,12 @@ The OnlyKey stores private keys. These private keys are used for three different
 
 1.  **Signing and Encrypted Messages/Files (OpenPGP)**
   - **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** - Provides a way to securely use OnlyKey for OpenPGP in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. This provides encryption everywhere on-the-go and supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+). More information on mobile support [here](https://docs.crp.to/mobile.html).
+
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
+  
   - **[OnlyKey GPG Agent](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide)** - Provides a way to securely use OnlyKey for OpenPGP on a local computer. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use GPG to do things like sign emails, git commits, software packages etc.
+{% include image.html file="agent.gif" %}
+
 2.  **SSH Authentication** - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure. For information on using OnlyKey for SSH authentication see [OnlyKey SSH Agent](https://docs.crp.to/onlykey-agent.html#ssh-agent-quickstart-guide).
 3.  **Secure Encrypted Backup** - This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For information on backing up OnlyKey see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
 
@@ -894,6 +855,8 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 {% include image.html file="image78.png" max-width="800" %}
 
 {% include tip.html content="Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey app and select a higher setting, 9 usually works well" %}
+
+
 
 ### Backup Without OnlyKey App {#backup-without-onlykey-app}
 
@@ -942,6 +905,8 @@ The OnlyKey DUO outer shell provides USB-C and additional protection.
 ### Android/iOS Support {#android-support}
 
 Android and iOS is supported by using a USB on-the-go (OTG) adapter. For more information read [Using OnlyKey with Mobile Devices (Android and iOS)](https://docs.crp.to/mobile.html)
+
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
 ## Troubleshooting {#troubleshooting}
 

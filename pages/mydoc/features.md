@@ -183,4 +183,9 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 *   Hold button #3 for 5+ seconds to lock OnlyKey.
 *   Hold button #6 for 5+ seconds to put OnlyKey in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
 
+**ONLYKEY DUO ONLY**
+
+*   Hold button #1 for 10+ seconds to put OnlyKey DUO in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
+*   Hold button #1 for 10+ seconds to put OnlyKey DUO in config mode, then  Hold button #3 for 20+ seconds to perform restore OnlyKey DUO to factory defaults.
+
 {% include links.html %}

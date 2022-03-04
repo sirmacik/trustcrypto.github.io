@@ -423,7 +423,7 @@ Selecting ''CAN'T SCAN IT'' will display the private code. Select this text and 
 
 {% include image.html file="image38.png" max-width="383"%}
 
-Now open the OnlyKey App and unlock your OnlyKey. Select the Slot to configure and paste this code into the field located next to ''Google Auth OTP'' as shown below:
+Now open the OnlyKey App and unlock your OnlyKey. Select the Slot to configure and paste this code into the field located next to ''OATH-TOTP (Google Authenticator)'' as shown below:
 
 {% include image.html file="image65.png" max-width="800" %}
 
@@ -440,7 +440,7 @@ Once your account has been verified you are all set. You can add a username and 
 {% include image.html file="image37.png" max-width="800" %}
 
 
-If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the Google Auth OTP field of the OnlyKey app.
+If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the OATH-TOTP (Google Authenticator) field of the OnlyKey app.
 
 To find out if a specific website is supported there is a full list of websites and wether or not they support 2FA [here](https://www.dongleauth.com/). To see if a certain site is supported see that there is a check next to "One Time Passwords (OTP)"
 
