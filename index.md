@@ -33,9 +33,9 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                      </span>
                  </div>
                  <div class="panel-body">
-                     <p>The users's guide provides step-by-step instructions for configuring the OnlyKey.</p>
-                     <a href="https://docs.crp.to/usersguide.html" class="btn btn-primary">OnlyKey User's Guide</a>
-                     <a href="https://docs.crp.to/usersguide.html" class="btn btn-primary">OnlyKey DUO User's Guide</a>
+                     <p>The users's guide for OnlyKey and OnlyKey DUO provide step-by-step instructions for configuring and using device.</p>
+                     <a href="https://docs.crp.to/usersguide.html" class="btn btn-primary">User's Guide</a>
+                     <a href="https://docs.crp.to/duousersguide.html" class="btn btn-primary">DUO User's Guide</a>
                  </div>
              </div>
          </div>
