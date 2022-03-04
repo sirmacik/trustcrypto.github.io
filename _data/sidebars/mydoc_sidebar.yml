@@ -23,7 +23,7 @@ entries:
       url: /security.html
       output: web, pdf
 
-  - title: User's Guide
+  - title: OnlyKey User's Guide
     output: web, pdf
     folderitems:
 
@@ -105,6 +105,158 @@ entries:
 
     - title: Additional Information
       url: /usersguide.html#web-links
+      output: web, pdf
+
+  - title: OnlyKey DUO User's Guide
+    output: web, pdf
+    folderitems:
+
+    - title: Unpacking OnlyKey DUO
+      url: /duousersguide.html#unpacking
+      output: web, pdf
+
+    - title: Setting up OnlyKey DUO
+      url: /duousersguide.html#initial-setup
+      output: web, pdf
+
+    - title: Configure Basic Login Info
+      url: /duousersguide.html#all-about-slots
+      output: web, pdf
+
+    - title: On-The-Go
+      url: /duousersguide.html#otg
+      output: web, pdf
+
+    - title: Configure Two Factor Authentication (2FA)
+      url: /duousersguide.html#two-factor-authentication-2fa
+      output: web, pdf
+
+    - title: Google Authenticator (TOTP)
+      url: /duousersguide.html#google-authenticator-totp
+      output: web, pdf
+
+    - title: Yubico® One-Time Password
+      url: /duousersguide.html#Yubico-one-time-password
+      output: web, pdf
+
+    - title: Security Key (FIDO2 / U2F)
+      url: /duousersguide.html#universal-2nd-factor-u2f
+      output: web, pdf
+
+    - title: Using With A Software Password Manager
+      url: /duousersguide.html#using-onlykey-with-a-software-password-manager
+      output: web, pdf
+
+    - title: OpenPGP Encryption (Files / Messages)
+      url: /duousersguide.html#openpgp
+      output: web, pdf
+
+    - title: Preferences
+      url: /duousersguide.html#preferences
+      output: web, pdf
+
+    - title: About Encryption Keys
+      url: /duousersguide.html#encryption-keys
+      output: web, pdf
+
+    - title: Generating Keys
+      url: /importpgp.html#generating-keys
+      output: web, pdf
+
+    - title: Loading Keys
+      url: /importpgp.html#loading-keys
+      output: web, pdf
+
+    - title: Secure Encrypted Backup Anywhere
+      url: /duousersguide.html#secure-encrypted-backup-anywhere
+      output: web, pdf
+
+    - title: Restore From Backup
+      url: /duousersguide.html#restore-from-backup
+      output: web, pdf
+
+    - title: Loading OnlyKey Firmware
+      url: /duousersguide.html#loading-onlykey-firmware
+      output: web, pdf
+
+    - title: Troubleshooting
+      url: /duousersguide.html#troubleshooting
+      output: web, pdf
+
+    - title: Change your PIN
+      url: /duousersguide.html#pin-change
+      output: web, pdf
+
+    - title: Additional Information
+      url: /duousersguide.html#web-links
+      output: web, pdf
+
+  - title: Features
+    output: web, pdf
+    folderitems:
+
+    - title: Universal Support
+      url: /features.html#universal-support
+      output: web, pdf
+
+    - title: Portable. Durable. Waterproof
+      url: /features.html#portable-durable-waterproof
+      output: web, pdf
+
+    - title: Pin Protected
+      url: /features.html#pin-protected
+      output: web, pdf
+
+    - title: Hardware Password Manager
+      url: /features.html#hardware-password-manager
+      output: web, pdf
+
+    - title: Universal Two-Factor Authentication
+      url: /features.html#universal-2-factor-token
+      output: web, pdf
+
+    - title: SSH Authentication
+      url: /features.html#ssh-authentication
+      output: web, pdf
+
+    - title: OpenPGP Everywhere
+      url: /features.html#openpgp-support
+      output: web, pdf
+
+    - title: Self-Destruct
+      url: /features.html#self-destruct-feature
+      output: web, pdf
+
+    - title: Encrypted Backup Anywhere
+      url: /features.html#encrypted-backup-anywhere
+      output: web, pdf
+
+    - title: Automatic Lock
+      url: /features.html#automatic-lock-feature
+      output: web, pdf
+
+    - title: International Keyboard Layouts
+      url: /features.html#international-keyboard-layouts
+      output: web, pdf
+
+    - title: Sysadmin Mode
+      url: /features.html#sysadmin-mode
+      output: web, pdf
+
+    - title: LED Definitions
+      url: /features.html#led-definitions-onlykey-color
+      output: web, pdf
+
+    - title: Button Definitions
+      url: /features.html#button-definitions
+      output: web, pdf
+
+    - title: Config Mode
+      url: /security.html#config-mode
+      output: web, pdf
+
+    - title: Plausible Deniability
+      url: /features.html#plausible-deniability-feature
       output: web, pdf
 
   - title: Features
