@@ -4,15 +4,20 @@ permalink: features.html
 sidebar: mydoc_sidebar
 tags: [OnlyKey, Features]
 keywords: OnlyKey, Features
-last_updated: Aug, 30 2020
+last_updated: Mar, 04 2022
 summary: Detailed information on OnlyKey Features
 toc: false
 folder: mydoc
 ---
 
 ## OnlyKey Product Details
+OnlyKey comes in two models:
 
+OnlyKey - Features 6 physical buttons, USB-A interface, and multiple color cases
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/Infographic.png)
+
+OnlyKey DUO - Features 3 physical buttons, both USB-C & USB-A interface, and small form factor
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/infographic-duo.jpg)
 
 ### UNIVERSAL SUPPORT
 Supports Windows, Mac OS, Android, Linux, and Chrome OS. Driverless operation – Recognized by computer as a regular keyboard.
@@ -23,7 +28,7 @@ On-the-go – Easily attach and detach the OnlyKey to your keychain and bring it
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/package.jpg)
 
 ### PIN PROTECTED
-Your PIN code must be typed onto the 6 button keypad of the OnlyKey in order to unlock. If you lose OnlyKey no problem, it is PIN protected and can’t be used without the PIN, enter the wrong PIN too many times the data will self destruct
+For OnlyKey your PIN code must be typed onto the 6 button keypad of the OnlyKey in order to unlock. For OnlyKey DUO you can use the OnlyKey App to unlock. If you lose OnlyKey no problem, it is PIN protected and can’t be used without the PIN, enter the wrong PIN too many times the data will self destruct. 
 
 ### WHERE CONVENIENCE AND SECURITY MEET
 OnlyKey is dual use. It functions as a password manager and a two-factor token. You can plug OnlyKey into any computer, press a button, and it types out a username and password the same as if you typed it yourself; but with one big difference, you don’t have to remember passwords! OnlyKey does that for you. This allows using very complex and secure passwords that cannot be cracked by any available methods.
@@ -35,9 +40,12 @@ Information can only be written to the OnlyKey or wiped. This protects your data
 
 ### HARDWARE PASSWORD MANAGER
 Instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. You can set up each of the 24 accounts using strong and random (up to 56 character) passwords along with the login page URLs, usernames, and/or two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
+{% include image.html file="mobile.gif" %}
+
 
 ### UNIVERSAL 2-FACTOR TOKEN
 Supports FIDO2 and FIDO Universal 2nd Factor Authentication (U2F), OATH TOTP, and Yubikey® compatible OTP. Chances are that if the website supports two-factor authentication, OnlyKey is compatible.
+{% include image.html file="fido2.gif" %}
 
 *   [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](https://docs.crp.to/usersguide.html#universal-2nd-factor-u2f)
 *   [OATH TOTP](https://docs.crp.to/usersguide.html#google-authenticator-totp)
@@ -52,6 +60,7 @@ SSH authentication is easy with passwordless login. Your SSH key remains securel
 
 ### OPENPGP SUPPORT
 Using OnlyKey makes OpenPGP easier than ever.
+{% include image.html file="agent.gif" %}
 
 *   [OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)
 *   [OnlyKey Agent GPG](https://docs.crp.to/onlykey-agent.html)
@@ -163,7 +172,7 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 *   Tap a button for slot <button #>A (i.e. Press OnlyKey button #1 for less than 1 second to type out account data stored in slot 1a)
 *   Hold a button for slot <button #>B (i.e. Press OnlyKey button #1 for more than 1 second to type out account data stored in slot 1b)
 
-***Note: This provides 12 slots, as OnlyKey supports two profiles there are a maximum of 24 accounts.***
+***Note: OnlyKey supports multiple profiles for a maximum of 24 accounts.***
 
 *   Hold button #1 for 5+ seconds to backup OnlyKey - See [secure backup feature](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere) for more information.
 *   Hold button #2 for 5+ seconds to type out slot labels - See [OnlyKey on-the-go](https://docs.crp.to/usersguide.html#otg) for more information.<br>i.e.<br>

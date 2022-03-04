@@ -966,6 +966,6 @@ Store –[ https://crp.to/ok](https://crp.to/ok)
 
 Github –[ https://github.com/trustcrypto](https://github.com/trustcrypto)
 
-Getting started with OnlyKey – [https://onlykey.io/start](https://onlykey.io/start)
+Getting started with OnlyKey – [https://onlykey.io/duo](https://onlykey.io/duo)
 
 {% include links.html %}
