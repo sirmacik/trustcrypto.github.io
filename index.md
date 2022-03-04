@@ -34,7 +34,8 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                  </div>
                  <div class="panel-body">
                      <p>The users's guide provides step-by-step instructions for configuring the OnlyKey.</p>
-                     <a href="https://docs.crp.to/usersguide.html" class="btn btn-primary">User's Guide</a>
+                     <a href="https://docs.crp.to/usersguide.html" class="btn btn-primary">OnlyKey User's Guide</a>
+                     <a href="https://docs.crp.to/usersguide.html" class="btn btn-primary">OnlyKey DUO User's Guide</a>
                  </div>
              </div>
          </div>
@@ -61,7 +62,7 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                      </span>
                  </div>
                  <div class="panel-body">
-                     <p>If you are having issues that are not addressed in the <a href="https://docs.crp.to/usersguide.html">User's Guide</a> or <a href="https://docs.crp.to/faq.html">FAQs</a> check out the <a href="https://forum.onlykey.io">OnlyKey Support forum</a>.</p>
+                     <p>If you are having issues that are not addressed in the <a href="https://docs.crp.to/usersguide.html">OnlyKey User's Guide</a>, <a href="https://docs.crp.to/duousersguide.html">OnlyKey DUO User's Guide</a>, or <a href="https://docs.crp.to/faq.html">FAQs</a> check out the <a href="https://forum.onlykey.io">OnlyKey Support forum</a>.</p>
                      <a href="https://forum.onlykey.io" class="btn btn-primary">Support</a>
                  </div>
              </div>

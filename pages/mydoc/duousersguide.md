@@ -1,6 +1,6 @@
 ---
 title: OnlyKey DUO User's Guide
-tags: [OnlyKey, , DUO, User's Guide]
+tags: [OnlyKey, DUO, User's Guide]
 keywords: OnlyKey, DUO, User's Guide
 last_updated: Feb, 28, 2022
 summary: The user's guide provides step-by-step instructions for configuring and using OnlyKey DUO.
@@ -905,7 +905,7 @@ The process is the same to backup without the app. OnlyKey can type out your enc
 
 ## Restore From Backup {#restore-from-backup}
 
-Using the backup file created in the [Secure Encrypted Backup Anywhere](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere) section, OnlyKey can be restored to a previous state. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra.
+Using the backup file created in the [Secure Encrypted Backup Anywhere](https://docs.crp.to/duousersguide.html#secure-encrypted-backup-anywhere) section, OnlyKey can be restored to a previous state. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra.
 
 {% include note.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
 
