@@ -165,9 +165,8 @@ OnlyKey types your passwords for you so it will work on any device, even on mobi
 
 {% include image.html file="mobile.gif" %}
 
-If you would like to learn more about setting usernames, passwords, and filling custom login forms check out [Set up a Slot (Advanced Login)](#set-up-a-slot-advanced)
 
-Next, let's use two different methods to generate strong uncrackable passwords.
+If you would like to learn more about setting usernames, passwords, and filling custom login forms check out [Set up a Slot (Advanced Login)](#set-up-a-slot-advanced)
 
 <i class="fa fa-arrow-down fa-3x"></i> **Next, let's use two different methods to generate strong uncrackable passwords.**
 
@@ -315,6 +314,7 @@ No setup is required to use OnlyKey as a security key. When registering and auth
 
 {% include image.html file="fido2.gif" %}
 
+
 The terminology for security keys can be a bit confusing so here are some quick definitions to make sense of it.
 
 When websites use the term security key they typically are referring to one of these:
@@ -322,13 +322,6 @@ When websites use the term security key they typically are referring to one of t
 - FIDO2 - A replacement for FIDO U2F released in 2019, security key may be used as a 2nd factor along with your password or may be used as a passwordless security key on supported applications. Passwordless authentication allows logging in with just a security key and a PIN code.
 
 The term WebAuthn is sometimes used instead of FIDO2, essentially WebAuthn is the web browser standard and is part of the larger FIDO2 project.
-
-{% include tip.html content="If I press an OnlyKey button where a password is already assigned won't OnlyKey type out my password?
-
-No, while OnlyKey is flashing blue it will not type out any information, OnlyKey also has a 2 second cool off period to ensure this does not happen accidentally.
-
-While you can press any button, some user's may prefer to always press the button of unused slot for FIDO authentication. For example, keep slot 6a unused and always press OnlyKey button 6 for FIDO authentication.
-" %}
 
 #### Security Key Advanced {#security-key-advanced}
 
@@ -905,8 +898,6 @@ The OnlyKey DUO outer shell provides USB-C and additional protection.
 ### Android/iOS Support {#android-support}
 
 Android and iOS is supported by using a USB on-the-go (OTG) adapter. For more information read [Using OnlyKey with Mobile Devices (Android and iOS)](https://docs.crp.to/mobile.html)
-
-{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
 ## Troubleshooting {#troubleshooting}
 
