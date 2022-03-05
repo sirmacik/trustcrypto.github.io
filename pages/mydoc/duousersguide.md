@@ -402,7 +402,7 @@ If you need OnlyKey to fill a custom login form that does not fit into the basic
 
 Delays may be set to allow for the web page to load.
 
-{% include callout.html content="**Step 1.** Click the 2a button in the OnlyKey app, select the Ful Configuration (Advanced) tab, click the checkboxes and enter values as shown:" type="default" %}
+{% include callout.html content="**Step 1.** Click the 2a button in the OnlyKey app, select the Full Configuration (Advanced) tab, click the checkboxes and enter values as shown:" type="default" %}
 
 {% include image.html file="image95.png" max-width="800" %}
 
