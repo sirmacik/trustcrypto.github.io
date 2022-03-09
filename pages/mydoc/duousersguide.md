@@ -43,8 +43,6 @@ If you wish to use your OnlyKey as a hardware password manager, enable other met
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 44257f8a5e4f312c630e976f68608aac03596f2d1c7563f414beeebdf5618688<br>Windows SHA 256 CHECKSUM: d221f4199be048ce5acf4ffc960b0ca60ff8846242a59f61c1a964d356244194<br>Linux SHA 256 CHECKSUM: 09eade68cc05909b8657db123c14a35668289dcfbcb9227d53f5e7e3c6dbfdc5<br> [ **Linux App GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/CryptoTrust_LLC_pub.asc) A1D6 4A3B 496C B0F3 6E12 B46F 9A9F 520D 44EA 53D1" %}
-
 {% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/tooltip.png)" %}
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to OnlyKey setup below***
