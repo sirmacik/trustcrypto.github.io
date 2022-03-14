@@ -365,157 +365,6 @@ This may also be loaded into slots 1 (130 in CLI) and 2 (129 in CLI) using the [
 
 Setting the same HMAC key (40 characters, 20 bytes hex) allows OnlyKey/Yubikey devices to generate the same responses and be used interchangeably.
 
-### Set up a Slot (Advanced Login) {#set-up-a-slot-advanced}
-
-{% include note.html content="OnlyKey DUO by default has no device PIN required and when no device PIN is set allows users to set static passwords or multi-factor authentication to slots. This limitation only applies when OnlyKey DUO has no device PIN, to enable full features and perform advanced logins set a device PIN in the ''Setup'' tab of the OnlyKey App. This device PIN provides physical security in the event the OnlyKey DUO is lost or stolen" %}
-
-**Once OnlyKey DUO is PIN protected multiple values can be set to a slot, let's assign a username AND password to slot 1b.**
-
-The example configuration shown below would be to set OnlyKey to store our Dropbox username and password. 
-
-{% include callout.html content="**Step 1.** Click the 1b button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
-
-{% include image.html file="image93.png" max-width="800" %}
-
-{% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
-
-**Now the configuration is saved and shows up in the OnlyKey app as ''Dropbox''**
-{% include image.html file="image94-duo.png" max-width="800" %}
-
-{% include callout.html content="**Step 3.** Now to log in we browse to Dropbox login page, click on the username field and hold button #1 (for more than one second) on OnlyKey to output the username and password into the login field." type="default" %}
-
-{% include image.html file="image92.png" max-width="602" %}
-
-{% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.<br><br>Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
-
-While the username, tab, password, return format covers many login pages there are lots of custom login pages and OnlyKey has features to match those custom login scenerios.
-
-If you need OnlyKey to fill a custom login form that does not fit into the basic login format i.e. You need to perform the following:<br>
-- Enter the Username<br>
-- Press RETURN<br>
-- Wait for website to load next page
-- Enter the password<br>
-- Press RETURN<br>
-<br>
-
-Delays may be set to allow for the web page to load.
-
-{% include callout.html content="**Step 1.** Click the 2a button in the OnlyKey app, select the Full Configuration (Advanced) tab, click the checkboxes and enter values as shown:" type="default" %}
-
-{% include image.html file="image95.png" max-width="800" %}
-
-{% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
-
-**Now the configuration is saved and shows up in the OnlyKey app as Custom Login**
-{% include image.html file="image96-duo.png" max-width="800" %}
-
-{% include callout.html content="**Step 3.** Now to log in we browse to custom login page, click on the username field and press button #2 on OnlyKey to output the username and press RETURN. OnlyKey then waits 3 seconds for the page to load before entering password into the password field." type="default" %}
-
-While this covers the majority of login scenerios there still may be some that don't fit the template. If you need OnlyKey to fill a custom login form that does not fit into the template i.e. You need to perform the following:<br>
-- Enter the Username<br>
-- Press TAB<br>
-- Press RETURN<br>
-- Wait for website to load next page
-- Enter the password<br>
-- Press TAB<br>
-- Press RETURN<br>
-<br>
-You can enter ' \t' or ' \r' inline with slot data to type the extra TAB or RETURN and ' \d3' to DELAY 3 seconds.<br>
-{% include image.html file="image97.png" max-width="800" %}
-
-Where in the username field the value is set to:<br>
-```
-onlykey \t  \r  \d3 
-```
-Where in the password field the value is set to:<br>
-```
-password \t  \r 
-```
-
-<br>
-You can chain together multiple ' \t' or ' \r' in the fields.  **Its one space to start and one space to end** so if your chaining together multiple tabs it would have a double space in between like:
-```
- \t  \t  \t  \t  \t password \r 
-```
-To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.
-
-Additionally, by using the URL field in Full Configuration (Advanced) we can have the OnlyKey type the login page URL into the browser and browse to the login page. This way a one-touch login is possible. Just select the empty URL field in the browser and the URL is automatically typed out and Return is pressed to browse to the site. Once on the site loads the password is entered and the login is complete.
-
-{% include tip.html content="Using the URL field provides protection against spear phishing attacks as this provides assurance that the site you are entering your password into is the legitimate site. For example, if you receive an email asking you to log into your account to verify something instead of clicking the link in the email to login you would use OnlyKey to browse to the correct site to login.
-<br>
-*Need a URL longer than 56 characters? Try using a URL shortner like Bit.ly*" %}
-
-**The example configuration shown below would be to set up a URL and password to automatically login to the Google page shown below. Notice that the username is already remembered by the website, so there is not a need to set this in the OnlyKey slot.**
-
-{% include image.html file="image72.png" max-width="800" %}
-
-{% include image.html file="image23.png" max-width="800" %}
-
-#### Test a Slot {#test-a-slot}
-
-Once you set your desired account information to a slot then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
-
-***Common issues:***
-
-*   ***The password is entered before page loads.***
-    *   *Set the delay, usually 2-3 seconds works well but this may not be enough time for slow web pages or slow internet connections.*
-*   ***There is a Captcha required sometimes after password***
-    *   *You can either set the delay to a high value like 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
-*   ***Everything works fine but I really wish it typed faster.***
-    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
-
-**These examples illustrate how to use OnlyKey in two real world scenarios. A key takeaway here is that you can configure OnlyKey to automatically do what you would normally do manually. Any combination of the fields shown in the slot configuration may be used or not used to fit login format.**
-
-<br>
-*The table below shows how to configure some common login forms that at first may seem problematic.*
-<br>
-
-<table>
-  <tr>
-   <td><strong>Login Format</strong>
-   </td>
-   <td><strong>Configuration</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Site that does not automatically select username field after loading page (i.e.Kracken).
-{% include image.html file="image42.png" max-width="201" %}
-   </td>
-   <td><em>With URL - You will notice that "Tab before UserName" is checked. This will select the username field as it is not automatically selected when the page loads.</em>
-{% include image.html file="image54.png" max-width="395" %}
-<em>Without URL - Browse to the login page first and place cursor in the username field before selecting the assigned OnlyKey button.</em>
-{% include image.html file="image4.png" max-width="395" %}
-   </td>
-  </tr>
-  <tr>
-   <td>Site where username is remembered after first login (i.e. Google).
-   </td>
-   <td><em>Password and 2FA only - This is usually the best option if you remember your username/email address as this will work on any computer whether your username is remembered or not. This method does not include URL in case you are prompted for a password.</em>
-{% include image.html file="image60.png" max-width="395"%}
-<em>Username Remembered w/URL - If you use your device mostly on a computer where you username is remembered this is a good option. If you use this configuration on a computer where username is not remembered then you must output of the login information into notepad and paste into login fields.</em>
-{% include image.html file="image61.png" max-width="395" %}
-   </td>
-  </tr>
-  <tr>
-   <td>Site that does not automatically select OTP code field (i.e. Salesforce)
-{% include image.html file="image22.png" max-width="201" %}
-After loading next page
-{% include image.html file="image47.png" max-width="201" %}
-   </td>
-   <td><em>You will notice that "Tab before OTP" is checked. This will select the OTP field as it is not automatically selected when the page loads.</em>
-{% include image.html file="image44.png" max-width="395"%}
-   </td>
-  </tr>
-  <tr>
-   <td>Site where username and password is required first and then OTP code field appears below (i.e. IT Glue)
-{% include image.html file="image28.png" max-width="207"%}
-   </td>
-   <td>
-{% include image.html file="image52.png" max-width="395" %}
-   </td>
-  </tr>
-</table>
-
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
 OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to KeePassXC, Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline secure hardware and everything else in the software password manager.
@@ -847,8 +696,6 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 
 {% include tip.html content="Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey app and select a higher setting, 9 usually works well" %}
 
-
-
 ### Backup Without OnlyKey App {#backup-without-onlykey-app}
 
 The process is the same to backup without the app. OnlyKey can type out your encrypted backup anywhere.
@@ -896,6 +743,157 @@ The OnlyKey DUO outer shell provides USB-C and additional protection.
 ### Android/iOS Support {#android-support}
 
 Android and iOS is supported by using a USB on-the-go (OTG) adapter. For more information read [Using OnlyKey with Mobile Devices (Android and iOS)](https://docs.crp.to/mobile.html)
+
+## Set up a Slot (Advanced Login) {#set-up-a-slot-advanced}
+
+{% include note.html content="OnlyKey DUO by default has no device PIN required and when no device PIN is set allows users to set static passwords or multi-factor authentication to slots. This limitation only applies when OnlyKey DUO has no device PIN, to enable full features and perform advanced logins set a device PIN in the ''Setup'' tab of the OnlyKey App. This device PIN provides physical security in the event the OnlyKey DUO is lost or stolen" %}
+
+**Once OnlyKey DUO is PIN protected multiple values can be set to a slot, let's assign a username AND password to slot 1b.**
+
+The example configuration shown below would be to set OnlyKey to store our Dropbox username and password. 
+
+{% include callout.html content="**Step 1.** Click the 1b button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
+
+{% include image.html file="image93.png" max-width="800" %}
+
+{% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
+
+**Now the configuration is saved and shows up in the OnlyKey app as ''Dropbox''**
+{% include image.html file="image94-duo.png" max-width="800" %}
+
+{% include callout.html content="**Step 3.** Now to log in we browse to Dropbox login page, click on the username field and hold button #1 (for more than one second) on OnlyKey to output the username and password into the login field." type="default" %}
+
+{% include image.html file="image92.png" max-width="602" %}
+
+{% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.<br><br>Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
+
+While the username, tab, password, return format covers many login pages there are lots of custom login pages and OnlyKey has features to match those custom login scenerios.
+
+If you need OnlyKey to fill a custom login form that does not fit into the basic login format i.e. You need to perform the following:<br>
+- Enter the Username<br>
+- Press RETURN<br>
+- Wait for website to load next page
+- Enter the password<br>
+- Press RETURN<br>
+<br>
+
+Delays may be set to allow for the web page to load.
+
+{% include callout.html content="**Step 1.** Click the 2a button in the OnlyKey app, select the Full Configuration (Advanced) tab, click the checkboxes and enter values as shown:" type="default" %}
+
+{% include image.html file="image95.png" max-width="800" %}
+
+{% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
+
+**Now the configuration is saved and shows up in the OnlyKey app as Custom Login**
+{% include image.html file="image96-duo.png" max-width="800" %}
+
+{% include callout.html content="**Step 3.** Now to log in we browse to custom login page, click on the username field and press button #2 on OnlyKey to output the username and press RETURN. OnlyKey then waits 3 seconds for the page to load before entering password into the password field." type="default" %}
+
+While this covers the majority of login scenerios there still may be some that don't fit the template. If you need OnlyKey to fill a custom login form that does not fit into the template i.e. You need to perform the following:<br>
+- Enter the Username<br>
+- Press TAB<br>
+- Press RETURN<br>
+- Wait for website to load next page
+- Enter the password<br>
+- Press TAB<br>
+- Press RETURN<br>
+<br>
+You can enter ' \t' or ' \r' inline with slot data to type the extra TAB or RETURN and ' \d3' to DELAY 3 seconds.<br>
+{% include image.html file="image97.png" max-width="800" %}
+
+Where in the username field the value is set to:<br>
+```
+onlykey \t  \r  \d3 
+```
+Where in the password field the value is set to:<br>
+```
+password \t  \r 
+```
+
+<br>
+You can chain together multiple ' \t' or ' \r' in the fields.  **Its one space to start and one space to end** so if your chaining together multiple tabs it would have a double space in between like:
+```
+ \t  \t  \t  \t  \t password \r 
+```
+To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.
+
+Additionally, by using the URL field in Full Configuration (Advanced) we can have the OnlyKey type the login page URL into the browser and browse to the login page. This way a one-touch login is possible. Just select the empty URL field in the browser and the URL is automatically typed out and Return is pressed to browse to the site. Once on the site loads the password is entered and the login is complete.
+
+{% include tip.html content="Using the URL field provides protection against spear phishing attacks as this provides assurance that the site you are entering your password into is the legitimate site. For example, if you receive an email asking you to log into your account to verify something instead of clicking the link in the email to login you would use OnlyKey to browse to the correct site to login.
+<br>
+*Need a URL longer than 56 characters? Try using a URL shortner like Bit.ly*" %}
+
+**The example configuration shown below would be to set up a URL and password to automatically login to the Google page shown below. Notice that the username is already remembered by the website, so there is not a need to set this in the OnlyKey slot.**
+
+{% include image.html file="image72.png" max-width="800" %}
+
+{% include image.html file="image23.png" max-width="800" %}
+
+#### Test a Slot {#test-a-slot}
+
+Once you set your desired account information to a slot then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
+
+***Common issues:***
+
+*   ***The password is entered before page loads.***
+    *   *Set the delay, usually 2-3 seconds works well but this may not be enough time for slow web pages or slow internet connections.*
+*   ***There is a Captcha required sometimes after password***
+    *   *You can either set the delay to a high value like 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
+*   ***Everything works fine but I really wish it typed faster.***
+    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
+
+**These examples illustrate how to use OnlyKey in two real world scenarios. A key takeaway here is that you can configure OnlyKey to automatically do what you would normally do manually. Any combination of the fields shown in the slot configuration may be used or not used to fit login format.**
+
+<br>
+*The table below shows how to configure some common login forms that at first may seem problematic.*
+<br>
+
+<table>
+  <tr>
+   <td><strong>Login Format</strong>
+   </td>
+   <td><strong>Configuration</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Site that does not automatically select username field after loading page (i.e.Kracken).
+{% include image.html file="image42.png" max-width="201" %}
+   </td>
+   <td><em>With URL - You will notice that "Tab before UserName" is checked. This will select the username field as it is not automatically selected when the page loads.</em>
+{% include image.html file="image54.png" max-width="395" %}
+<em>Without URL - Browse to the login page first and place cursor in the username field before selecting the assigned OnlyKey button.</em>
+{% include image.html file="image4.png" max-width="395" %}
+   </td>
+  </tr>
+  <tr>
+   <td>Site where username is remembered after first login (i.e. Google).
+   </td>
+   <td><em>Password and 2FA only - This is usually the best option if you remember your username/email address as this will work on any computer whether your username is remembered or not. This method does not include URL in case you are prompted for a password.</em>
+{% include image.html file="image60.png" max-width="395"%}
+<em>Username Remembered w/URL - If you use your device mostly on a computer where you username is remembered this is a good option. If you use this configuration on a computer where username is not remembered then you must output of the login information into notepad and paste into login fields.</em>
+{% include image.html file="image61.png" max-width="395" %}
+   </td>
+  </tr>
+  <tr>
+   <td>Site that does not automatically select OTP code field (i.e. Salesforce)
+{% include image.html file="image22.png" max-width="201" %}
+After loading next page
+{% include image.html file="image47.png" max-width="201" %}
+   </td>
+   <td><em>You will notice that "Tab before OTP" is checked. This will select the OTP field as it is not automatically selected when the page loads.</em>
+{% include image.html file="image44.png" max-width="395"%}
+   </td>
+  </tr>
+  <tr>
+   <td>Site where username and password is required first and then OTP code field appears below (i.e. IT Glue)
+{% include image.html file="image28.png" max-width="207"%}
+   </td>
+   <td>
+{% include image.html file="image52.png" max-width="395" %}
+   </td>
+  </tr>
+</table>
 
 ## Troubleshooting {#troubleshooting}
 
