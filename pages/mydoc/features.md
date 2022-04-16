@@ -167,6 +167,10 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 
 *   While locked buttons only function to enter PIN code to unlock OnlyKey, 7-10 digits.
 
+**ONLYKEY DUO ONLY**
+
+*   PIN may be entered via OnlyKey App or by physical touch. Touch buttons 1, 2, 3 to enter 1, 2, 3 and hold (for 1 second) buttons 1, 2, 3 to enter 4, 5, 6.
+
 #### Unlocked OnlyKey {#unlocked-onlykey}
 
 *   Tap a button for slot <button #>A (i.e. Press OnlyKey button #1 for less than 1 second to type out account data stored in slot 1a)
@@ -189,12 +193,17 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 5b Github<br>
 6b Lastpass<br>
 
+**ONLYKEY ONLY**
+
 *   Hold button #3 for 5+ seconds to lock OnlyKey.
 *   Hold button #6 for 5+ seconds to put OnlyKey in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
 
 **ONLYKEY DUO ONLY**
 
+*   Hold button #3 for 5+ seconds to switch OnlyKey DUO profiles (cycles through green -> blue -> yellow -> purple)
+*   Hold button #3 for 10+ seconds to lock OnlyKey DUO.
 *   Hold button #1 for 10+ seconds to put OnlyKey DUO in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
-*   Hold button #1 for 10+ seconds to put OnlyKey DUO in config mode, then  Hold button #3 for 20+ seconds to perform restore OnlyKey DUO to factory defaults.
+*   Hold button #1 for 10+ seconds to put OnlyKey DUO in config mode, then  Hold button #2 for 20+ seconds to restore OnlyKey DUO to factory defaults (also called [self-destruct feature](https://docs.crp.to/features.html#self-destruct-feature)).
+
 
 {% include links.html %}

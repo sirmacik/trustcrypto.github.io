@@ -33,11 +33,11 @@ If you wish to use your OnlyKey as a hardware password manager, enable other met
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
-[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.5/OnlyKey.App.5.3.5.dmg)
+[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey.App.5.3.6.dmg)
 
-[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.5/OnlyKey_5.3.5.exe)
+[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey_5.3.6.exe)
 
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.5/OnlyKey_5.3.5_amd64.deb)
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey_5.3.6_amd64.deb)
 
 {% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
@@ -80,6 +80,8 @@ The Slots area of the application is where you will set up things like passwords
 **What are slots?** On the OnlyKey DUO you have 3 touch buttons, button #1 has a 1 and is located next to the green light. Button #2 has a 2 and is located on the other side. Button #3 is activated by pressing both buttons 1 & 2 at the same time. Slots correspond to the buttons on OnlyKey, for example pressing button #1 will type login information from slot ''1a'' and holding button #1 for 1 second with type login information from slot ''1b''.  
 
 **What are profiles?** In the app you will notice four colors -- green, blue, yellow, purple. These colors corrispond to OnlyKey DUOs four profiles. You can hold button #3 down on OnlyKey DUO for 5+ seconds to switch between profiles. The light on OnlyKey will change to green, blue, yellow, purple to indicate which profile is active. Four profiles allows using OnlyKey DUO to store more than just 6 slots (1a, 1b, 2a, 2b, 3a, 3b), there are a total of 24 available slots.
+
+{% include tip.html content="OnlyKey DUO has features that can be activated by pressing/holding buttons, find the full list of [button features here](https://docs.crp.to/features.html#button-definitions)" %}
 
 **What is stored in slots?** In each slot you can set a label, static information like a password, or two-factor authentication. The label is something to help you remember what login information is stored in a slot, slots that have not been configured have no label so they are shown as ''empty''. 
 
@@ -565,11 +567,8 @@ OnlyKey supports HMAC challenge-response. By default, user input (button press) 
 
 You can change your backup key/passphrase at any time by entering your PIN to put the device in config mode. By setting backup key mode to locked, the backup key/passphrase may not be changed. This setting provides extra security so that even if an adversary has your PIN and has physical access to your device they would not be able to backup and restore your data.
 
-<!---
+{% include important.html content="With OnlyKey DUO, if no PIN is set the backup key is locked by default." %}
 
-{% include important.html content="With OnlyKey Go, if no PIN is set the backup key is locked by default." %}
-
--->
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
@@ -710,7 +709,7 @@ Using the backup file created in the [Secure Encrypted Backup Anywhere](https://
 
 {% include note.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
 
-{% include callout.html content="**Step 1.** Ensure that a PIN is set on the target OnlyKey by completing the [Initial Setup](#initial-setup) section and ensure that the same passphrase/key is loaded onto the OnlyKey that was used to backup." type="default" %}
+{% include callout.html content="**Step 1.** Ensure that the same passphrase/key is loaded onto the OnlyKey that was used to backup." type="default" %}
 
 {% include callout.html content="**Step 2.** Put the OnlyKey into config mode by holding the 6 button down for more than 5 seconds, and then re-entering your PIN. You will see the OnlyKey LED fade in and out continuously (Red) while in config mode." type="default" %}
 
@@ -722,15 +721,21 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 {% include callout.html content="**Step 4.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey reboots automatically." type="default" %}
 
-## Loading OnlyKey Firmware {#loading-onlykey-firmware}
+## Loading OnlyKey DUO Firmware {#loading-onlykey-firmware}
 
-Follow the upgrade guide below to load the latest OnlyKey firmware:
+### Download Firmware
 
-- [**Firmware upgrade guide**](https://docs.crp.to/upgradeguide.html)
+There is a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the OnlyKey app.
 
-If you received a message in the OnlyKey app stating *"This application is designed to work with a newer version of OnlyKey firmware."* or if your OnlyKey has firmware v0.2-beta.6x or earlier follow the link below:
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/firmware-duo.png)
 
-- [**Legacy firmware upgrade guide (v0.2-beta.6x or earlier)**](https://docs.crp.to/legacyupgradeguide.html)
+- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.1-prod/Signed_OnlyKey_3_0_1_STD.txt" target="_blank" download>OnlyKey DUO firmware</a>
+- Go to the Firmware tab in the app
+- Follow the instructions in the app to load firmware
+
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_0_STD.txt SHA 256 checksum:<br>
+c86f2b774d5c063c0fda6b40b5aa363d4ca0f85d0e8872e7f5f733b24a0afbc6" %}
+
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 
@@ -747,6 +752,8 @@ Android and iOS is supported by using a USB on-the-go (OTG) adapter. For more in
 ## Set up a Slot (Advanced Login) {#set-up-a-slot-advanced}
 
 {% include note.html content="OnlyKey DUO by default has no device PIN required and when no device PIN is set allows users to set static passwords or multi-factor authentication to slots. This limitation only applies when OnlyKey DUO has no device PIN, to enable full features and perform advanced logins set a device PIN in the ''Setup'' tab of the OnlyKey App. This device PIN provides physical security in the event the OnlyKey DUO is lost or stolen" %}
+
+{% include tip.html content="PIN may be entered via OnlyKey App or by physical touch. Touch buttons 1, 2, 3 to enter 1, 2, 3 and hold (for 1 second) buttons 1, 2, 3 to enter 4, 5, 6." %}
 
 **Once OnlyKey DUO is PIN protected multiple values can be set to a slot, let's assign a username AND password to slot 1b.**
 
