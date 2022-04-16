@@ -733,8 +733,8 @@ There is a tab named Firmware in the app. This may be used to load the latest fi
 - Go to the Firmware tab in the app
 - Follow the instructions in the app to load firmware
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_0_STD.txt SHA 256 checksum:<br>
-c86f2b774d5c063c0fda6b40b5aa363d4ca0f85d0e8872e7f5f733b24a0afbc6" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_1_STD.txt SHA 256 checksum:<br>
+2e35145ec335b6a78603e6a557c917ae83cab716c8bb66bde3a4a58c88deca50" %}
 
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
