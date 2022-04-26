@@ -55,7 +55,7 @@ dd2a955f029dce16dd48b05542efa8b37d83ceec24fa668c1002dee309fb172d" %}
 
 - Select the [Load Firmware] button as shown below and follow the instructions in the app to load firmware
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite6.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite6.png)
 
 {% include tip.html content="***Factory Default?***<br><br>
 To perform a factory default you have two options:
@@ -71,18 +71,18 @@ To perform a factory default you have two options:
 In order to setup an OnlyKey with the International Travel Edition first ensure you have loaded the International Travel Edition firmware and you have installed the OnlyKey app.
 
 Step 1 - Select [Next] to get started.
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite1.png)
 
 Step 2 - Enter a PIN code, check the disclaimer box, and select [Next].
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite2.png)
 
 Step 3 - Re-enter PIN code, and select [Next].
 
 Step 4 - Select [I don't want a second profile, skip this step]
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite4.png)
 
 Step 5 - If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next].
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite5.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite5.png)
 
 Step 6 - Re-enter PIN code, and select [Next].
 

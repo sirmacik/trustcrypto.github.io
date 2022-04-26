@@ -27,7 +27,7 @@ KERNEL=="ttyACM*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="066
 # $ pip install fido2
 # $ cd /opt/
 # $ git clone https://github.com/Yubico/python-fido2.git
-# $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey-blink.rules
+# $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey-blink.rules
 # $ sudo cp 49-onlykey-blink.rules /etc/udev/rules.d/
 # $ sudo udevadm control –reload
 #

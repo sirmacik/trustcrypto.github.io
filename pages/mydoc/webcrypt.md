@@ -31,7 +31,7 @@ WebCrypt integrates with services like [Keybase](https://keybase.io/) and [Proto
 [Decrypt Messages](https://apps.crp.to/decrypt)
 
 
-{% include tip.html content="WebCrypt 3.0 Demo [here](https://vimeo.com/505377733) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![Demo: OnlyKey WebCrypt 3.0 - Now Supporting Multiple Recipients and ProtonMail](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt3.gif)](https://vimeo.com/505377733)" %}
+{% include tip.html content="WebCrypt 3.0 Demo [here](https://vimeo.com/505377733) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![Demo: OnlyKey WebCrypt 3.0 - Now Supporting Multiple Recipients and ProtonMail](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt3.gif)](https://vimeo.com/505377733)" %}
 
 ## How it works
 
@@ -67,13 +67,13 @@ Receiving encrypted files is as easy as putting a custom link in your email sign
 <br><br>
 - Add a **'More info'** link to: https://onlykey.io/pages/webcrypt<br>
 This link provides information to let your sender know what WebCrypt is, why it's secure, and includes a quick 30 second video that will shows how to use it.<br>
-[![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
+[![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
 
 ### See WebCrypt in action {#openpgp-action}
 
 After configuring your OnlyKey following [these instructions](https://docs.crp.to/importpgp.html#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages/files.
 
-{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
 #### Step-by-step sending your first message
 

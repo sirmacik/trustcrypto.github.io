@@ -17,13 +17,13 @@ OnlyKey Agent is a hardware-based SSH and GPG agent that allows offline cold sto
 
 SSH is a popular remote access tool that is often used by administrators and with OnlyKey Agent remote access can be passwordless. GPG (or GnuPG) is a versatile OpenPGP tool that is used for encryption and signing. The way OnlyKey Agent works is that the indicator light on OnlyKey will blink purple for a sign request (such as SSH authentication), and will blink turquoise for a decrypt request. To authorize a user must press button (or [challenge code](https://docs.crp.to/usersguide.html#derived-challenge-mode)) on OnlyKey.
 
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374479136)<br>[![How-To: Use OnlyKey for Passwordless SSH](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ssh-thumb.png)](https://vimeo.com/374479136)" %}
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374479136)<br>[![How-To: Use OnlyKey for Passwordless SSH](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ssh-thumb.png)](https://vimeo.com/374479136)" %}
 
 You can do things like sign your emails, git commits, and software packages, manage your passwords (with pass and gopass, among others), authenticate web tunnels and file transfers, and more. Since many 3rd party applications already integrate with SSH and GPG you can use those as well.
 
 Example shows import (-i) of an existing OpenPGP public key (eccpub.asc) to GnuPG for hardware protected Pass with OnlyKey:
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pass.gif)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/pass.gif)
 
 ## SSH Agent Quickstart Guide
 
@@ -326,9 +326,9 @@ By default, when set to "Slot: Auto Load" in the OnlyKey app, OpenPGP or OpenSSH
 
 Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots. For example, to set an ECC key in ECC4 and ECC5 :
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp-load1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/pgp-load1.png)
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp-load2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/pgp-load2.png)
 
 Then to use the stored keys the -sk (signing key) and -dk (decryption key) flags are used like this:
 
@@ -413,7 +413,7 @@ $ pip3 install onlykey-agent
 $ sudo apt update && sudo apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey-agent
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -423,7 +423,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 $ sudo apt update && sudo apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey-agent
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -434,7 +434,7 @@ $ yum update
 $ yum install python3-pip python3-devel python3-tk libusb-devel libudev-devel \
               gcc redhat-rpm-config
 $ pip3 install onlykey-agent
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -444,7 +444,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 $ dnf install python3-pip python3-devel python3-tkinter libusb-devel libudev-devel \
               gcc redhat-rpm-config
 $ pip3 install onlykey-agent
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -453,7 +453,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 $ zypper install python3-pip python3-devel python3-tk libusb-1_0-devel libudev-devel
 $ pip3 install onlykey-agent
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -687,7 +687,7 @@ For the SSH Agent you can [load existing OpenPGP](https://docs.crp.to/importpgp.
 
 By default this loads your RSA OpenSSH key into slot 2 or your ECC OpenSSH key into slot ECC2. To specify a custom slot change 'Slot:' from 'Auto Load' to desired slot number, check 'Signature key' box, click 'Save to OnlyKey':
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openssh.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/load-openssh.png)
 
 ### Setting Derived Key User Input Mode
 

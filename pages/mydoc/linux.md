@@ -16,14 +16,14 @@ folder: mydoc
 
 Linux requires a UDEV rule in order for non-root users to be able to communicate with USB devices. Installing the [OnlyKey App .deb](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey_5.3.3_amd64.deb) will also install the UDEV rule automatically or to install manually:
 
-- Go to [https://github.com/trustcrypto/trustcrypto.github.io/blob/master/49-onlykey.rules](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules) and download or create a copy of the file named `49-onlykey.rules` into the Linux directory: `/etc/udev/rules.d/`.
+- Go to [https://github.com/trustcrypto/trustcrypto.github.io/blob/master/49-onlykey.rules](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules) and download or create a copy of the file named `49-onlykey.rules` into the Linux directory: `/etc/udev/rules.d/`.
 
 - Use the command `udevadm control --reload-rules && udevadm trigger` or restart system for changes to take effect
 
 To complete this via terminal issue the following commands:
 
 ```
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -84,7 +84,7 @@ You may want to also install the OnlyKey CLI app. Follow instructions [here](htt
 This permits additional customizations such as scripting to automatically running commands when OnlyKey is inserted.
 
 - One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will display “NOTSET” instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. If you have OnlyKey command-line utility installed, adding the following to UDEV rule will automatically set the current time on OnlyKey every time you plug it: RUN+="/usr/local/bin/onlykey-cli settime"
-Additonal details are provided in the udev rule here - [https://github.com/trustcrypto/trustcrypto.github.io/blob/master/49-onlykey.rules](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules)
+Additonal details are provided in the udev rule here - [https://github.com/trustcrypto/trustcrypto.github.io/blob/master/49-onlykey.rules](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules)
 
 - Another example is provided for OnlyKey to blink blue whenever the udev rule is run. This is useful for visual verification of LUKS disk decryption, additional details available [here](https://docs.crp.to/full-disk-encryption.html)
 

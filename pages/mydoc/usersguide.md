@@ -29,11 +29,11 @@ There are two options for setting up your OnlyKey.
 
 - [OnlyKey Quick Setup](#quick-setup) (No app required, 1-3 minute setup time)
 
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372991865) that demonstrates setting up a new OnlyKey with Quick Setup<br>[![How-To:  Setting up OnlyKey with Quick Setup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/quick-setup.png)](https://vimeo.com/372991865)" %}
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372991865) that demonstrates setting up a new OnlyKey with Quick Setup<br>[![How-To:  Setting up OnlyKey with Quick Setup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/quick-setup.png)](https://vimeo.com/372991865)" %}
 
 - [OnlyKey Setup Using OnlyKey App](#onlykey-setup) (App install required, 5-10 minute setup time)
 
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372946883) that demonstrates setting up a new OnlyKey using the OnlyKey App<br>[![How-To: Setting up OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/video-setup.png)](https://vimeo.com/372946883)" %}
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372946883) that demonstrates setting up a new OnlyKey using the OnlyKey App<br>[![How-To: Setting up OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/video-setup.png)](https://vimeo.com/372946883)" %}
 
 ### OnlyKey Quick Setup {#quick-setup}
 
@@ -75,7 +75,7 @@ To complete OnlyKey quick setup follow the instructions below:
 
 {% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 44257f8a5e4f312c630e976f68608aac03596f2d1c7563f414beeebdf5618688<br>Windows SHA 256 CHECKSUM: d221f4199be048ce5acf4ffc960b0ca60ff8846242a59f61c1a964d356244194<br>Linux SHA 256 CHECKSUM: 09eade68cc05909b8657db123c14a35668289dcfbcb9227d53f5e7e3c6dbfdc5<br> [ **Linux App GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/CryptoTrust_LLC_pub.asc) A1D6 4A3B 496C B0F3 6E12 B46F 9A9F 520D 44EA 53D1" %}
 
-{% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/tooltip.png)" %}
+{% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/tooltip.png)" %}
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to OnlyKey setup below***
 
@@ -85,7 +85,7 @@ If you have already setup OnlyKey using quick setup proceed to [Account Setup](#
 
 {% include callout.html content="**Step 1.** Insert OnlyKey and select [Next] to get started." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/config1.png)
 
 {% include tip.html content="Before setting a PIN<br><br>You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock a phone lock screen:" %}
 
@@ -93,27 +93,27 @@ If you have already setup OnlyKey using quick setup proceed to [Account Setup](#
 
 {% include callout.html content="**Step 2.** Enter a PIN code on the OnlyKey Keypad, check the disclaimer box, and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite2.png)
 
 {% include callout.html content="**Step 3.** Re-enter PIN code, and select [Next]." type="default" %}
 
 {% include callout.html content="**Step 4.** Enter a PIN code for second profile, check the disclaimer box, and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config4.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/config4.png)
 
 {% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config5.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/config5.png)
 
 {% include callout.html content="**Step 6.** Re-enter PIN code, and select [Next]." type="default" %}
 
 {% include callout.html content="**Step 7.** Follow the instructions to enter a Backup Passphrase and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7-2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/setup7-2.png)
 
 {% include callout.html content="**Step 8.** If you have an OnlyKey backup to restore, select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. If you do not have a backup just select [Next] to complete the setup." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/setup10.png)
 
 Your device is now set up and will automatically reboot. You will be prompted to enter your PIN from now on when using the OnlyKey.
 
@@ -133,7 +133,7 @@ If you lose or forget your PIN then a factory default must be completed on your 
 ## Setting up accounts {#account-setup}
 
 {% include tip.html content="Set aside some time to set up accounts as this can be time consuming the first time you set it up. After you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.<br><br>
-Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/set-password.jpeg)](https://vimeo.com/372894554)" %}
+Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/set-password.jpeg)](https://vimeo.com/372894554)" %}
 
 ### Configure Basic Login Info {#all-about-slots}
 
@@ -538,7 +538,7 @@ With resident credentials you can create a smoother, username-less login experie
 
 One drawback of resident credentials is that physical devices have limited storage. OnlyKey stores up to 12 resident credentials. In the event this fills up resident credentials can be managed and removed with the [OnlyKey CLI](https://docs.crp.to/command-line.html#list-and-remove-fido2-resident-key)
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/cli-cred-ls.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/cli-cred-ls.png)
 
 **FIDO2 Extensions**
 
@@ -547,7 +547,7 @@ FIDO2 allows support of extensions such as the HMAC SHA1 extension for challenge
 #### Challenge-Response {#challenge-response}
 
 Challenge response is a form of authentication where an application sends a unique challenge and OnlyKey sends back an HMACSHA1 response. This response may be used for things like encryption of data which is used by software such as [KeePassXC](#keepassxc). OnlyKey flashes yellow when a challenge is received and user presses any button on OnlyKey to authorize the response. OnlyKey supports customizable "HMAC User Input Mode" which allows the user to select if button press is required for challenge-response.
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/prefs.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/prefs.png)
 
 By default, no setup is required for challenge-response as OnlyKey has random HMAC key set by default and two available HMAC slots.
 
@@ -556,17 +556,17 @@ By default, no setup is required for challenge-response as OnlyKey has random HM
 Challenge-response is compatible with Yubikey devices. This permits OnlyKey and Yubikey to be used interchangeably for challenge-response with supported applications. In order to use OnlyKey and Yubikey interchangeably both must have the same HMAC key set. To set HMAC key on YubiKey we recommend using the [Yubikey Personalization Tool](https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/).
 
 For example, a random secret key may be generated and loaded into slots 1 and 2 on Yubikey:
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal1.png)
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ykchal1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ykchal2.png)
 
 The same secret key may be loaded into HMAC slots 1 and 2 using the OnlyKey App. Make sure to pad the end with 0s like this:
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/hmacload.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/hmacload.png)
 
 You will see a success message in the app "Last message received: Successfully set" indicating it loaded successfully
 
 This may also be loaded into slots 1 (130 in CLI) and 2 (129 in CLI) using the [OnlyKey CLI](https://docs.crp.to/command-line.html).
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/okchal2-cli.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/okchal2-cli.png)
 
 Setting the same HMAC key (40 characters, 20 bytes hex) allows OnlyKey/Yubikey devices to generate the same responses and be used interchangeably.
 
@@ -625,7 +625,7 @@ You can either import passwords to a create a new KeePassXC database by going to
 - (Optional) Copy the master password and save it to one of your OnlyKey slots using the OnlyKey app
 - Select "Add additional protection"
 - Select "Add YubiKey Challenge-Response"
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/keepassxc4.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/keepassxc4.png)
 - OnlyKey will show in the list of devices, select slot1 or slot2 and click done
 - OnlyKey will flash yellow, press any button, if importing OnlyKey may flash yellow several times, press any button when it does this to complete import
 - Congrats! You now have a new password database
@@ -708,7 +708,7 @@ OnlyKey is OpenPGP compatible and the worlds first plug and play encryption devi
 1) **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** - Provides a way to securely use OnlyKey for OpenPGP in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. This provides encryption everywhere on-the-go and supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+). More information on mobile support [here](https://docs.crp.to/mobile.html).
 2) **[OnlyKey GPG Agent](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide)** - Provides a way to securely use OnlyKey for OpenPGP on a local computer. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use GPG to do things like sign emails, git commits, software packages etc.
 
-{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
 {% include note.html content="Private keys are securely stored on OnlyKey and are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. Additionally, physical user presence is required to process secure messages/files. This is in contrast to Smart Cards which only require a PIN code that can be captured and replayed without physical user presence." %}
 
@@ -747,7 +747,7 @@ Receiving encrypted files is as easy as putting a custom link in your email sign
 <br><br>
 - Add a **'More info'** link to: https://onlykey.io/pages/webcrypt<br>
 This link provides information to let your sender know what WebCrypt is, why it's secure, and includes a quick 30 second video that will shows how to use it.<br>
-[![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
+[![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
 
 ## Preferences {#preferences}
 

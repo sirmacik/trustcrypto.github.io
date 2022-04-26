@@ -19,31 +19,31 @@ Before setting up plausible deniability read the International Travel Edition Gu
 
 {% include callout.html content="**Step 1.** Select the Advanced checkbox and then select [Next] to get started." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite1.png)
 
 {% include callout.html content="**Step 2.** Enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite2.png)
 
 {% include callout.html content="**Step 3.** Re-enter PIN code, and select [Next]." type="default" %}
 
 {% include callout.html content="**Step 4.** Enter a PIN code for second profile, check the disclaimer box, check the Plausible Deniability Profile radio button, and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite4.png)
 
 {% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite5.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ite5.png)
 
 {% include callout.html content="**Step 6.** Re-enter PIN code, and select [Next]." type="default" %}
 
 {% include callout.html content="**Step 7.** Follow the instructions to enter a Backup Passphrase and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7-2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/setup7-2.png)
 
 {% include callout.html content="**Step 8.** If you have an OnlyKey backup to restore, select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. If you do not have a backup just select [Next] to complete the setup." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/setup10.png)
 
 {% include note.html content="Since plausible deniability mode does not support encryption, if accounts in your second profile of your backup have U2F or Yubikey 2FA set this will not be restored. TOTP mode will work in plausible deniability mode." %}
 
@@ -51,7 +51,7 @@ Before setting up plausible deniability read the International Travel Edition Gu
 
 {% include callout.html content="**Step 10.** Select [Preferences] from the top menu and then click [Set Wipe Mode]. Full wipe will completely erase both the OnlyKey data and firmware in the event of a factory default. This is an important step as if this is not set it is possible to determine which firmware edition is loaded after doing a factory default, more information [here](https://docs.crp.to/usersguide.html#configurable-wipe-mode)" type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pref.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/pref.png)
 
 ## Plausible Deniability FAQ
 

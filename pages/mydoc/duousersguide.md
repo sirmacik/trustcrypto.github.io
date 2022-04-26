@@ -43,7 +43,7 @@ If you wish to use your OnlyKey as a hardware password manager, enable other met
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/tooltip.png)" %}
+{% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/tooltip.png)" %}
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to OnlyKey setup below***
 
@@ -53,15 +53,15 @@ If you wish to use your OnlyKey as a hardware password manager, enable other met
 
 {% include tip.html content="If you would like to set advanced features such as a device PIN, select the advanced checkbox" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config1-duo.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/config1-duo.png)
 
 {% include callout.html content="**Step 2.** Select [Next] and follow the instructions to enter a backup passphrase" type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7-2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/setup7-2.png)
 
 {% include callout.html content="**Step 3.** If you have an OnlyKey backup to restore, select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. If you do not have a backup just select [Next] to complete the setup." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/setup10.png)
 
 Your device is now set up and will automatically reboot. 
 
@@ -71,7 +71,7 @@ Your device is now set up and will automatically reboot.
 
 ## Setting up accounts {#account-setup}
 
-Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/set-password.jpeg)](https://vimeo.com/372894554)
+Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/set-password.jpeg)](https://vimeo.com/372894554)
 
 ### Configure Basic Login Info {#all-about-slots}
 
@@ -335,7 +335,7 @@ With resident credentials you can create a smoother, username-less login experie
 
 One drawback of resident credentials is that physical devices have limited storage. OnlyKey stores up to 12 resident credentials. In the event this fills up resident credentials can be managed and removed with the [OnlyKey CLI](https://docs.crp.to/command-line.html#list-and-remove-fido2-resident-key)
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/cli-cred-ls.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/cli-cred-ls.png)
 
 **FIDO2 Extensions**
 
@@ -344,7 +344,7 @@ FIDO2 allows support of extensions such as the HMAC SHA1 extension for challenge
 #### Challenge-Response {#challenge-response}
 
 Challenge response is a form of authentication where an application sends a unique challenge and OnlyKey sends back an HMACSHA1 response. This response may be used for things like encryption of data which is used by software such as [KeePassXC](#keepassxc). OnlyKey flashes yellow when a challenge is received and user presses any button on OnlyKey to authorize the response. OnlyKey supports customizable "HMAC User Input Mode" which allows the user to select if button press is required for challenge-response.
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/prefs.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/prefs.png)
 
 By default, no setup is required for challenge-response as OnlyKey has random HMAC key set by default and two available HMAC slots.
 
@@ -353,17 +353,17 @@ By default, no setup is required for challenge-response as OnlyKey has random HM
 Challenge-response is compatible with Yubikey devices. This permits OnlyKey and Yubikey to be used interchangeably for challenge-response with supported applications. In order to use OnlyKey and Yubikey interchangeably both must have the same HMAC key set. To set HMAC key on YubiKey we recommend using the [Yubikey Personalization Tool](https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/).
 
 For example, a random secret key may be generated and loaded into slots 1 and 2 on Yubikey:
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal1.png)
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ykchal1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/ykchal2.png)
 
 The same secret key may be loaded into HMAC slots 1 and 2 using the OnlyKey App. Make sure to pad the end with 0s like this:
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/hmacload.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/hmacload.png)
 
 You will see a success message in the app "Last message received: Successfully set" indicating it loaded successfully
 
 This may also be loaded into slots 1 (130 in CLI) and 2 (129 in CLI) using the [OnlyKey CLI](https://docs.crp.to/command-line.html).
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/okchal2-cli.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/okchal2-cli.png)
 
 Setting the same HMAC key (40 characters, 20 bytes hex) allows OnlyKey/Yubikey devices to generate the same responses and be used interchangeably.
 
@@ -422,7 +422,7 @@ You can either import passwords to a create a new KeePassXC database by going to
 - (Optional) Copy the master password and save it to one of your OnlyKey slots using the OnlyKey app
 - Select "Add additional protection"
 - Select "Add YubiKey Challenge-Response"
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/keepassxc4.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/keepassxc4.png)
 - OnlyKey will show in the list of devices, select slot1 or slot2 and click done
 - OnlyKey will flash yellow, press any button, if importing OnlyKey may flash yellow several times, press any button when it does this to complete import
 - Congrats! You now have a new password database
@@ -665,7 +665,7 @@ The OnlyKey stores private keys. These private keys are used for three different
 1.  **Signing and Encrypted Messages/Files (OpenPGP)**
   - **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** - Provides a way to securely use OnlyKey for OpenPGP in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. This provides encryption everywhere on-the-go and supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+). More information on mobile support [here](https://docs.crp.to/mobile.html).
 
-{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt.png)](https://vimeo.com/374653109)" %}
   
   - **[OnlyKey GPG Agent](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide)** - Provides a way to securely use OnlyKey for OpenPGP on a local computer. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use GPG to do things like sign emails, git commits, software packages etc.
 {% include image.html file="agent.gif" %}
@@ -727,7 +727,7 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 There is a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the OnlyKey app.
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/firmware-duo.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/firmware-duo.png)
 
 - Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.1-prod/Signed_OnlyKey_3_0_1_STD.txt" target="_blank" download>OnlyKey DUO firmware</a>
 - Go to the Firmware tab in the app

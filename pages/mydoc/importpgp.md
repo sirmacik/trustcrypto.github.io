@@ -49,7 +49,7 @@ If you wish to generate a new key, follow the steps below:
 
 {% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374512727)<br>[![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp.png)](https://vimeo.com/374512727)" %}
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374512727)<br>[![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/pgp.png)](https://vimeo.com/374512727)" %}
 
 {% include callout.html content="**Step 1.** Go to https://keybase.io" type="default" %}
 

@@ -49,7 +49,7 @@ In order for non-root users in Linux to be able to communicate with OnlyKey a ud
 $ sudo apt update && sudo apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -59,7 +59,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 $ sudo apt update && sudo apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -70,7 +70,7 @@ $ yum update
 $ yum install python3-pip python3-devel python3-tk libusb-devel libudev-devel \
               gcc redhat-rpm-config
 $ pip3 install onlykey
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -80,7 +80,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 $ dnf install python3-pip python3-devel python3-tkinter libusb-devel libudev-devel \
               gcc redhat-rpm-config
 $ pip3 install onlykey
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -89,7 +89,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 $ zypper install python3-pip python3-devel python3-tk libusb-1_0-devel libudev-devel
 $ pip3 install onlykey
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -98,7 +98,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 $ sudo pacman -Sy git python3-setuptools python3 libusb python3-pip
 $ pip3 install onlykey
-$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
@@ -550,7 +550,7 @@ Successfully set ECC Key
 
 $ onlykey-cli settime
 
-This can be added to scripts such as the UDEV rule to automatically set time when device is inserted into USB port. See example [here](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules)
+This can be added to scripts such as the UDEV rule to automatically set time when device is inserted into USB port. See example [here](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules)
 
 
 **Scripted provisioning of an OnlyKey slots and keys can be done by creating a script that sets multiple values on OnlyKey**
@@ -562,7 +562,7 @@ List current resident keys:
 ```
 onlykey-cli credential ls
 ```
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/cli-cred-ls.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/cli-cred-ls.png)
 
 Remove a resident key by credential ID
 
@@ -572,7 +572,7 @@ onlykey-cli credential rm eu7LPIjTNwIJt2Ws9LWJlXkiNKaueSEEGteZM2MT/lZtEuYo49V6de
 
 Once removed, list current resident keys to verify:
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/cli-cred-ls2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/cli-cred-ls2.png)
 
 ## Source
 

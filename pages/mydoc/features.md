@@ -14,10 +14,10 @@ folder: mydoc
 OnlyKey comes in two models:
 
 OnlyKey - Features 6 physical buttons, USB-A interface, and multiple color cases
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/Infographic.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/Infographic.png)
 
 OnlyKey DUO - Features 3 physical buttons, both USB-C & USB-A interface, and small form factor
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/infographic-duo.jpg)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/infographic-duo.jpg)
 
 ### UNIVERSAL SUPPORT
 Supports Windows, Mac OS, Android, Linux, and Chrome OS. Driverless operation – Recognized by computer as a regular keyboard.
@@ -25,7 +25,7 @@ Supports Windows, Mac OS, Android, Linux, and Chrome OS. Driverless operation �
 ### PORTABLE. DURABLE. WATERPROOF
 On-the-go – Easily attach and detach the OnlyKey to your keychain and bring it everywhere you go.
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/package.jpg)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/package.jpg)
 
 ### PIN PROTECTED
 For OnlyKey your PIN code must be typed onto the 6 button keypad of the OnlyKey in order to unlock. For OnlyKey DUO you can use the OnlyKey App to unlock. If you lose OnlyKey no problem, it is PIN protected and can’t be used without the PIN, enter the wrong PIN too many times the data will self destruct. 
