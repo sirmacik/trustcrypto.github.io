@@ -33,15 +33,15 @@ If you wish to generate a new key, follow the steps below:
 
 ### Generating Keys {#generating-keys}
 
-#### Generate OpenPGP Key Using Protonmail {#generating-keys-protonmail}
+#### Generate OpenPGP Key Using ProtonMail {#generating-keys-protonmail}
 
 {% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
 {% include callout.html content="**Step 1.** Create a free ProtonMail account [here](https://protonmail.com/signup)." type="default" %}
 
-{% include callout.html content="**Step 2.** Follow the instructions in the [Protonmail knowledge base here](https://protonmail.com/blog/elliptic-curve-cryptography/) to add new ECC X25519 key" type="default" %}
+{% include callout.html content="**Step 2.** Follow the instructions in the [Protonmail knowledge base here](https://proton.me/news/elliptic-curve-cryptography) to add new ECC X25519 key" type="default" %}
 
-{% include callout.html content="**Step 3.** Follow the instructions in the [Protonmail knowledge base here](https://protonmail.com/support/knowledge-base/download-public-private-key/) to Download your private key" type="default" %}
+{% include callout.html content="**Step 3.** Follow the instructions in the [Protonmail knowledge base here](https://proton.me/support/download-public-private-key) to Download your private key" type="default" %}
 
 {% include callout.html content="**Step 4.** Follow the instructions [here](#loading-keys) to load key onto OnlyKey" type="default" %}
 
