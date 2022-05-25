@@ -105,28 +105,28 @@ The Slots area of the application is where you will set up things like passwords
 
 Open a text editor and then hold down the 2 button on OnlyKey for 5+ seconds. OnlyKey will type out the slot labels you have set which may look something like this:
 
-GREEN
+GREEN<br>
 1a Google<br>
 2a Bank<br>
 3a Email<br>
 1b O365<br>
 2b VPN<br>
 3b Github<br>
-BLUE
+BLUE<br>
 1a School<br>
 2a Amazon<br>
 3a Dropbox<br>
 1b <br>
 2b <br>
 3b <br>
-YELLOW
+YELLOW<br>
 1a Kracken<br>
 2a Bittrex<br>
 3a Coinbase<br>
 1b <br>
 2b <br>
 3b <br>
-PURPLE
+PURPLE<br>
 1a Protonmail<br>
 2a Lastpass<br>
 3a <br>
