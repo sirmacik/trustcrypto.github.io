@@ -16,7 +16,8 @@ OnlyKey is supported on WSL2 by following the steps described in the Microsoft a
 ### Step 1. Install WSL 2 and Dependencies on Windows
 
 **Automatic Setup**
-- Run the Powsershell script here to install WSL 2 and Dependencies on Windows
+- Run the Powsershell script <a href="https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/InstallOnlyKeyAgent-Step2.ps1" target="_blank" download="InstallOnlyKeyAgent-Step2.ps1">here</a> to install WSL 2 and Dependencies on Windows
+
 
 **Manual Setup**
 - Powershell command to install WSL 2 and the default Ubuntu VM
@@ -39,7 +40,7 @@ OnlyKey is supported on WSL2 by following the steps described in the Microsoft a
 
 **Automatic Setup**
 
-- Run the Powsershell script here to install the OnlyKey CLI and OnlyKey-Agent in WSL
+- Run the Powsershell script <a href="https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/InstallWSL-Step1.ps1" target="_blank" download="InstallWSL-Step1.ps1">here</a> to install the OnlyKey CLI and OnlyKey-Agent in WSL
 
 **Manual Setup**
 
