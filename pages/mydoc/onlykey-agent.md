@@ -402,9 +402,9 @@ If you wish to switch back to your software keys unset GNUPGHOME.
 Currently Windows is not supported directly but may be used with a Linux virtual machine. Another alternative is to use [OpenSSH v8.2](https://docs.crp.to/openssh.html) which supports OnlyKey as a FIDO security key. We are working on additional options for Windows support.
 
 ### MacOS Install with dependencies
-Python 3.8 and pip3 are required. To setup a Python environment on MacOS we recommend Anaconda [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos)
+Python 3.8+ and pip3 are required. To setup a Python environment on MacOS we recommend Anaconda [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos)
 ```
-$ brew install libusb gnupg@2.2
+$ brew install libusb gnupg
 $ pip3 install onlykey-agent
 ```
 
