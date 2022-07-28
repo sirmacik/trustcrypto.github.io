@@ -19,7 +19,7 @@ This release has a lot of improvements and new features. Here is the list of new
 - Redesign of app UI
 - Redesign of app slots screen for basic login & advanced configuration
 - Backup verification (there is a button to verify backup file integrity)
-- This release includes support for new features in OnlyKey firmware v2.1.2 
+- This release includes support for new features in OnlyKey firmware 
 - - 24 Yubikey OTP Slots
 - - Support for node-onlykey API
 - - FIDO2 Improvements
