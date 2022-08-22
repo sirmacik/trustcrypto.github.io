@@ -407,6 +407,10 @@ We recommend installing with [Homebrew](https://brew.sh/).
 ```
 $ brew install onlykey-agent
 ```
+Alternatively, you can install using PIP
+```
+$ pip3 install onlykey-agent
+```
 
 ### Ubuntu Install with dependencies
 ```
