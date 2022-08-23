@@ -280,7 +280,7 @@ password \t  \r
 <br>
 You can chain together multiple ' \t' or ' \r' in the fields.  Its one space to start and one space to end so if your chaining together multiple tabs it would have a double space in between like:
 ```
- \t  \t  \t  \t  \t password \r 
+{space} {\} {t} {space} {space} {\} {t} {space} {password} {space} {\} {r}
 ```
 To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.
 
