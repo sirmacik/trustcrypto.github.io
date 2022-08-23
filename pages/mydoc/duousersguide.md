@@ -608,7 +608,12 @@ i.e. To press Ctrl-Alt-Del, release Ctrl-Alt-Del, delay 3 seconds, press TAB, en
  \c\a\d  \3 USERNAME \t PASSWORD
 ```
 
-Notice that a space followed by the '\' character is used to begin " \c\a\d " and one space is used to end (resets modifier keys). To use one space to start and one to end for multiple actions there will be two spaces in between actions.
+Notice that a {space} followed by the {\} character is used to begin { \c\a\d } and one space is used to end (resets modifier keys). To use one space to start and one to end for multiple actions there will be two spaces in between actions.
+
+i.e.
+```
+{space} {\} {c} {\} {a} {\} {d} {space} {space} {\} {3} {space} {USERNAME} {space} {\} {t} {USERNAME}
+```
 Here are some other common examples:
 
 - To open terminal in Linux, then delay two seconds, then enter a command into terminal (2 second delays added)
@@ -821,7 +826,7 @@ password \t  \r
 <br>
 You can chain together multiple ' \t' or ' \r' in the fields.  **Its one space to start and one space to end** so if your chaining together multiple tabs it would have a double space in between like:
 ```
- \t  \t  \t  \t  \t password \r 
+{space} {\} {t} {space} {space} {\} {t} {space} {password} {space} {\} {r}
 ```
 To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.
 

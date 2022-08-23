@@ -862,7 +862,12 @@ i.e. To press Ctrl-Alt-Del, release Ctrl-Alt-Del, delay 3 seconds, press TAB, en
  \c\a\d  \3 USERNAME \t PASSWORD
 ```
 
-Notice that a space followed by the '\' character is used to begin " \c\a\d " and one space is used to end (resets modifier keys). To use one space to start and one to end for multiple actions there will be two spaces in between actions.
+Notice that a {space} followed by the {\} character is used to begin { \c\a\d } and one space is used to end (resets modifier keys). To use one space to start and one to end for multiple actions there will be two spaces in between actions
+
+i.e.
+```
+{space} {\} {c} {\} {a} {\} {d} {space} {space} {\} {3} {space} {USERNAME} {space} {\} {t} {USERNAME}
+```
 Here are some other common examples:
 
 - To open terminal in Linux, then delay two seconds, then enter a command into terminal (2 second delays added)
