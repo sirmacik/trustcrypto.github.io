@@ -726,18 +726,23 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ## Loading OnlyKey DUO Firmware {#loading-onlykey-firmware}
 
+{% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
+
 ### Download Firmware
 
 There is a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the OnlyKey app.
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/firmware-duo.png)
 
-- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.1-prod/Signed_OnlyKey_3_0_1_STD.txt" target="_blank" download>OnlyKey DUO firmware</a>
+- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.2-prod/Signed_OnlyKey_3_0_2_STD.txt" target="_blank" download>OnlyKey DUO firmware</a>
+
+### Load Signed Firmware
+
 - Go to the Firmware tab in the app
 - Follow the instructions in the app to load firmware
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_1_STD.txt SHA 256 checksum:<br>
-2e35145ec335b6a78603e6a557c917ae83cab716c8bb66bde3a4a58c88deca50" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_2_STD.txt SHA 256 checksum:<br>
+d547df850e963ca0c49f2b04dd91cd6dd845c00affbe3b9b552042d5ad196ce0" %}
 
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
@@ -746,7 +751,7 @@ There is a tab named Firmware in the app. This may be used to load the latest fi
 
 The OnlyKey DUO outer shell provides USB-C and additional protection.
 
-#### [Purchase in OnlyKey Store](https://onlykey.io/collections/accessories-1)
+#### [Purchase in OnlyKey Store](https://onlykey.io/collections/all/products/extra-onlykey-duo-usb-c-shell-black?variant=41182801526970)
 
 ### Android/iOS Support {#android-support}
 

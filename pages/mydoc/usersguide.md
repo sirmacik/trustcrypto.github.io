@@ -975,9 +975,21 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
-Follow the upgrade guide below to load the latest OnlyKey firmware:
+{% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
-- [**Firmware upgrade guide**](https://docs.crp.to/upgradeguide.html#loading-onlykey-firmware)
+### Download Firmware
+
+- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.2-prod/Signed_OnlyKey_3_0_2_STD.txt" target="_blank" download>OnlyKey firmware</a>
+
+### Load Signed Firmware
+
+There is a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the OnlyKey app.
+
+- Go to the Firmware tab in the app
+- Follow the instructions in the app to load firmware
+
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_2_STD.txt SHA 256 checksum:<br>
+d547df850e963ca0c49f2b04dd91cd6dd845c00affbe3b9b552042d5ad196ce0" %}
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 
