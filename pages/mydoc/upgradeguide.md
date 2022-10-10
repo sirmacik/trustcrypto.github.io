@@ -2,7 +2,7 @@
 title: Upgrade Guide
 tags: [OnlyKey, Firmware, Upgrade]
 keywords: OnlyKey, Firmware, Upgrade
-last_updated: Jan, 19, 2022
+last_updated: Oct, 10, 2022
 summary: Follow this guide to upgrade OnlyKey firmware and desktop app
 sidebar: mydoc_sidebar
 permalink: upgradeguide.html
@@ -16,14 +16,10 @@ We are pleased to announce that the latest and greatest OnlyKey software is now 
 
 This release has a lot of improvements and new features. Here is the list of new features in this release:
 
-- Redesign of app UI
-- Redesign of app slots screen for basic login & advanced configuration
-- Backup verification (there is a button to verify backup file integrity)
-- This release includes support for new features in OnlyKey firmware 
-- - 24 Yubikey OTP Slots
-- - Support for node-onlykey API
-- - FIDO2 Improvements
-- Mac M1 support
+- Support for Yubikey OTP with public key shorter than 16 bytes.
+- Default for OnlyKey DUO challenge-mode is now set to press only, no challenge code required.
+- Fixes for FIDO2 resident key backup/restore.
+- Fix for PD Mode where if sysadmin mode is enabled device is unusable in PD Mode.
 
 ## Backup Before Upgrading
 
