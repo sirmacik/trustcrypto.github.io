@@ -172,10 +172,11 @@ If you would like to learn more about setting usernames, passwords, and filling 
 
 #### Generate Strong Passwords Online {#generate-strong-passwords-online}
 
-There are many websites that allow you to generate a secure random password such as passwordsgenerator.net and there are also tools built into many software password managers.
+There are many websites that allow you to generate a secure random password and there are also tools built into many software password managers.
 
 - Password manager built into [KeePassXC](#keepassxc)
-- Passwordsgenerator.net password generation tool available [here](https://passwordsgenerator.net/)
+- Bitwarden password generation tool available [here](https://bitwarden.com/password-generator/)
+- 1password password generation tool available [here](https://1password.com/password-generator/)
 - LastPass password generation tool available [here](https://lastpass.com/generatepassword.php)
 
 {% include image.html file="image59.png" %}
