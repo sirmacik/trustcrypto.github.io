@@ -387,7 +387,7 @@ Chrome Extension available from the Chrome Web Store [here](https://chrome.googl
 
 ### Configure Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
-Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are four different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA OnlyKey will work with most sites that support 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
+Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are four different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA OnlyKey will work with most sites that support 2FA - [http://www.dongleauth.com/](http://www.dongleauth.com/)
 
 1) [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](#universal-2nd-factor-u2f)<br>
 2) [OATH TOTP](#google-authenticator-totp)<br>
