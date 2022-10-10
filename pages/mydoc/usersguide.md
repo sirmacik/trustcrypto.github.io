@@ -439,6 +439,7 @@ Once your account has been verified you are all set. You can add a username and 
 
 {% include image.html file="image37.png" max-width="800" %}
 
+{% include important.html content="OnlyKey is a device without a battery, it requires the OnlyKey App to be running in order to generate TOTPs. Without the app running it will generate a code of NOTSET. Alternatively, you can browse to [https://apps.crp.to](https://apps.crp.to) if the app is not available." %}
 
 If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the OATH-TOTP (Google Authenticator) field of the OnlyKey app.
 
@@ -826,7 +827,7 @@ You can change your backup key/passphrase at any time by entering your PIN to pu
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
-Setting wipe mode to "Full Wipe" ensures that not only is your sensitive data wiped when a factory default occurs but also the firmware is wiped. This ensures that no data or meta data such as what version of firmware you had would be accessible to an adversary that steals or otherwise obtains a user's OnlyKey and then performs a factory default. The tradeoff of setting wipe mode to full wipe is that this cannot be changed once set and when a factory default occurs the firmware must be reloaded using the [firmware upgrade guide](https://docs.crp.to/upgradeguide.html). For user's desiring the highest level of security we recommend enabling full wipe.
+Setting wipe mode to "Full Wipe" ensures that not only is your sensitive data wiped when a factory default occurs but also the firmware is wiped. This ensures that no data or meta data such as what version of firmware you had would be accessible to an adversary that steals or otherwise obtains a user's OnlyKey and then performs a factory default. The tradeoff of setting wipe mode to full wipe is that this cannot be changed once set and when a factory default occurs the firmware must be reloaded using the [firmware upgrade guide](https://docs.crp.to/usersguide.html#loading-onlykey-firmware). For user's desiring the highest level of security we recommend enabling full wipe.
 
 ### Sysadmin Mode {#sysadmin-mode}
 
