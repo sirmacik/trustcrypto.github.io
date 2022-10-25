@@ -22,6 +22,8 @@ folder: mydoc
                             <div class="panel-body">
                             Just getting started with OnlyKey?
                             <a href="https://onlykey.io/start">Start here</a>
+                            Just getting started with OnlyKey DUO?
+                            <a href="https://onlykey.io/duo">Start here</a>
                             </div>
                         </div>
                     </div>
@@ -34,8 +36,7 @@ folder: mydoc
                         </div>
                         <div id="collapseTwenty" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                            Check out the <a href="https://forum.onlykey.io">OnlyKey Support Forum</a>
-                            Check out the <a href="https://docs.crp.to">OnlyKey Documentation</a>
+                            Check out the <a href="https://docs.crp.to">OnlyKey Documentation</a> and if that does not answer your question reach out on the <a href="https://forum.onlykey.io">OnlyKey Support Forum.</a>
                             </div>
                         </div>
                     </div>
@@ -77,19 +78,18 @@ folder: mydoc
                           If the site you use is breached the attacker may be able to get your password in a couple of ways.<br>
 
                           a) They get a dump of all passwords in clear text.<br>
+                          This is less likely to occur as it usually requires that the service used very bad security practices. If it does occur then it does not matter how long or complex the password is, the password has been compromised.<br>
+
                           b) They get a hashed dump of all passwords.<br><br>
+                          If this occurs the attacker has to crack the passwords and only the weak passwords would be compromised.<br><br>
 
-                          If a) this is less likely to occur as it usually requires that the service used very bad security practices. If it does occur then it does not matter how long or complex the password is that password is compromised.<br>
+                          OnlyKey addresses b) by allowing users to set strong, up to 56 character long passwords which cannot be cracked by any available methods. These strong passwords are also more usable since you don't have to remember them, they are stored on your OnlyKey and typed out for you.<br><br>
 
-                          If b) then the attacker has to crack the passwords and only the weak passwords will be compromised.<br><br>
-
-                          OnlyKey addresses b) by allowing users to set strong, up to 56 character long passwords that may not be cracked. And they are actually usable since you don't have to remember them, they are stored on your OnlyKey and typed out for you.<br><br>
-
-                          OnlyKey addresses a) by making two-factor authentication compatible with the largest number of sites to ensure it is used. If two-factor authentication is used then even if an attacker has your password they still can't access your account and you are protected. Additionally, by using a random password a compromise of a password on one site will not affect other accounts. <br><br>
+                          OnlyKey addresses a) by making multi-factor authentication (MFA) compatible with the largest number of sites. If MFA is used and an attacker has your password they still can't access your account as they do not have your second factor.<br><br>
 
                           2) The computer you use is hacked (you click on a malicious website or download malware accidentally)<br>
 
-                          If the computer you use is hacked and you use a software password manager like LastPass, Dashlane, or even KeePass the attacker is in your computer and can see everything that you can see including your passwords. This is scary considering that now instead of just having one account compromised a hacker has access to everything in one fell swoop. Even if two factors are required an attacker can just wait for you to unlock your password manager, if you walk away from the computer without locking it the attacker can start copying your passwords one-by-one. In fact if this happens you might have been better off to have not used a password manager in the first place as a hacker would have a more difficult time in finding out what accounts you had. <br><br>
+                          If the computer you use is hacked and you use a cloud based software password manager like LastPass, Dashlane, or even a local password manager like KeePass then the attacker may be able to extract your passwords. As the hacker has access to your computer they essentially have access to everything you have access to on that computer.<br><br>
 
                           If the computer you use is compromised the attacker may be able to get your passwords in a couple of ways. <br><br>
 
@@ -98,7 +98,7 @@ folder: mydoc
 
                           OnlyKey addresses b) by storing everything offline (cold storage). Essentially OnlyKey is secure by design so that you can only ever write or wipe passwords stored on the OnlyKey. If an attacker gains access to your computer there are no passwords stored there to steal. Even if your OnlyKey is plugged in and unlocked there is no way to download or copy information from the OnlyKey.<br><br>
 
-                          OnlyKey addresses a) by making two-factor authentication usable for users and compatible with the largest number of sites. If two-factor authentication is used then even if an attacker captures your password they still can't access your account without obtaining your one-time password. One time passwords used by Yubikey OTP are only valid once and Google Authenticator OTPs are only valid once and for a short period of time, usually 30 seconds. <br><br>
+                          OnlyKey addresses a) by making MFA usable for users and compatible with the largest number of sites. If a MFA method such as TOTP is used then even if an attacker captures your password they still can't access your account without obtaining your one-time password. One time passwords used by Yubikey OTP are only valid once and Google Authenticator TOTPs are only valid once and for a short period of time, usually 30 seconds. <br><br>
 
                           3) Your cloud based password manager was compromised.<br>
 
@@ -115,9 +115,7 @@ folder: mydoc
                         </div>
                         <div id="collapseSixteen" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                The data stored on OnlyKey is encrypted with military grade encryption (AES-256-GCM) and most importantly is PIN protected.<br><br>
-
-What this means is that if you lose your OnlyKey it is essentially a small paper weight without the PIN, nothing can be read from or written to it.<br><br>
+                                The data stored on OnlyKey is encrypted with military grade encryption (AES-256-GCM) and cannot be extracted from device. Additionally, with a PIN set on OnlyKey that PIN must be known to use the device.<br><br>
 
 If an attacker tries to guess the PIN it will wipe all data after 10 failed attempts.<br><br>
 
@@ -140,7 +138,7 @@ Read more about the technical physical hardware security and encrypted backup fe
                             <div class="panel-body">
                                 Smart Cards are commonly used to provide two-factor authentication and decryption/signing for things like email. Unfortunately, if the computer that a smart card is plugged into is compromised by an attacker then the security of the smart card is compromised. All the attacker has to do is capture the keyboard output (keylogging) and they can capture the users smart card PIN. With this PIN they can then authenticate to anything that the user has access to and also decrypt/sign emails as if the user had done so. With OnlyKey your PIN is entered on the 6 digit keypad located on the device itself that does not in any way send this PIN to the connected computer. In this way the PIN entry is offline and inaccessible to an attacker who has compromised the connected computer. <br><br>
 
-In addition to PIN security OnlyKey has functionality that smart cards do not like password management, SSH login, and is universally supported without the need for drivers to be installed. The OnlyKey is detected by the computer as a keyboard and no middleware or special drivers are required. OnlyKey can literally be plugged in and used on a computer that you have never used before and it works without installing anything.
+In addition to on-device PIN security OnlyKey has functionality that smart cards do not like password management, SSH login, GPG agent and is universally supported without the need for drivers to be installed. The OnlyKey is detected by the computer as a keyboard and no middleware or special drivers are required. OnlyKey can be plugged in and used on a computer that you have never used before and it works without installing anything. The OnlyKey app is required to make changes on your OnlyKey and that is available on Windows, Mac OS, and Linux.
                             </div>
                         </div>
                     </div>
@@ -180,7 +178,8 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                Depending on what your wipe mode is set to it either wipes all sensitive data (erases your usernames, passwords, keys etc.) or if you are using full wipe mode it does a complete erase of the OnlyKey including sensitive data and all firmware (this requires reloading firmware).
+                                Depending on what your wipe mode is set to it either wipes all sensitive data (erases your usernames, passwords, keys etc.) or if you are using full wipe mode it does a complete erase of the OnlyKey including sensitive data and all firmware (this requires reloading firmware). <br><br>
+                                Use this PIN when you wish to wipe all sensitive data from the OnlyKey and restore it to a factory default state.
                             </div>
                         </div>
                     </div>
@@ -188,12 +187,12 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">When should I use the self destruct PIN?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">What apps and services are compatible with OnlyKey?</a>
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Whenever you wish to wipe all sensitive data from the OnlyKey and restore it to a factory default state.
+                                Our team has created several desktop applications for OnlyKey see details <a href="https://docs.onlykey.io/index.html#apps" target="_blank">here.</a>. OnlyKey can be used with any application that supports passwords entered via a keyboard which means most applications are supported. Additionally, OnlyKey can be used as a security key for any website or app that supports modern two-factor authentication methods like OATH-TOTP (Google Authenticator), FIDO2 (Security Key), and Yubikey OTP. Finally, you can use OnlyKey for developer tools that are compatible with GPG such as GIT and remote access with SSH. Check out the knowledge base for other use cases <a href="https://docs.onlykey.io/index.html#knowledge-base" target="_blank">here.</a> 
                             </div>
                         </div>
                     </div>
@@ -206,7 +205,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseEight" class="panel-collapse collapse">
                             <div class="panel-body">
-                                The firmware is signed in a blockchain fashion. As the OnlyKey is an embedded device, things like memory are limited so verification of a complete firmware file would not be possible on the device. However, blocks of firmware can be signed along with the signature of the previous block to create a blockchain that can be verified by the OnlyKey bootloader. Additionally, firmware integrity is verified every time the device boots. In the event firmware verification fails the device is wiped and signed firmware must be reloaded.
+                                The firmware is signed and only signed firmware can be loaded onto device. Additionally, firmware integrity is verified every time the device boots. In the event firmware verification fails the device is wiped and signed firmware must be reloaded. More information available <a href="https://docs.onlykey.io/security.html#security-features-overview" target="_blank">here.</a>
                             </div>
                         </div>
                     </div>
@@ -219,7 +218,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseNine" class="panel-collapse collapse">
                             <div class="panel-body">
-                                We have designed OnlyKey to be as transparent as possible. You can load our firmware, review the source, or write your own firmware. Here are some of the features that allow you validate that there is no backdoor or tampering has occurred.<br><br>
+                                We have designed OnlyKey to be as transparent as possible. The firmware and applications are open source and can be reviewed <a href="https://github.com/trustcrypto" target="_blank">here.</a>. Here are some of the features that allow you validate that there is no backdoor or tampering has occurred.<br><br>
 
 1) Hardware - By having a clear coat on the electronics you can actually see the hardware and would be able to see a hardware type of backdoor.<br><br>
 
@@ -234,12 +233,12 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">Is OnlyKey Supported on Android and iPhone?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">Is OnlyKey Supported on iPhone, Android, and other mobile devices?</a>
                             </h4>
                         </div>
                         <div id="collapseThirteen" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Yes, OnlyKey is supported by any device that would support a USB keyboard. More information <a href="https://docs.crp.to/mobile.html">here</a><br>                      
+                                Yes, OnlyKey is supported by any device that would support a USB keyboard. A guide to using OnlyKey with mobile devices is available <a href="https://docs.crp.to/mobile.html">here</a><br>                      
                             </div>
                         </div>
                     </div>
