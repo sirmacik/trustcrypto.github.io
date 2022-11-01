@@ -689,9 +689,21 @@ For the SSH Agent you can [load existing OpenPGP](https://docs.crp.to/importpgp.
 - Enter Passphrase if one is required
 - Put OnlyKey into config mode and select 'Save to OnlyKey'
 
-By default this loads your RSA OpenSSH key into slot 2 or your ECC OpenSSH key into slot ECC2. To specify a custom slot change 'Slot:' from 'Auto Load' to desired slot number, check 'Signature key' box, click 'Save to OnlyKey':
+By default this loads your RSA OpenSSH key into RSA2 or your ECC OpenSSH key into slot ECC2. To specify a custom slot change 'Slot:' from 'Auto Load' to desired slot number, check 'Signature key' box, click 'Save to OnlyKey':
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/load-openssh.png)
+
+Then to export your public key from OnlyKey:
+
+```
+onlykey-agent user@host -sk ECC2
+```
+
+or
+
+```
+onlykey-agent user@host -e rsa -sk RSA2
+```
 
 ### Setting Derived Key User Input Mode
 
