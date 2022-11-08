@@ -48,7 +48,7 @@ For information on using the app with OnlyKey see the [OnlyKey User's Guide](htt
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 44257f8a5e4f312c630e976f68608aac03596f2d1c7563f414beeebdf5618688<br>Windows SHA 256 CHECKSUM: d221f4199be048ce5acf4ffc960b0ca60ff8846242a59f61c1a964d356244194<br>Linux SHA 256 CHECKSUM: 09eade68cc05909b8657db123c14a35668289dcfbcb9227d53f5e7e3c6dbfdc5<br> [ **Linux App GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/CryptoTrust_LLC_pub.asc) A1D6 4A3B 496C B0F3 6E12 B46F 9A9F 520D 44EA 53D1" %}
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 1f7756227af0752bf2d1071bf6f04e5a3282df54ac0125fdfb4abfab7edb115a<br>Windows SHA 256 CHECKSUM: 22fc0b80d0b11fa5b0f9a566ae11edb8aee41e53905259e2a8a948c71e45e1fe<br>Linux SHA 256 CHECKSUM: d5e223581b459c869a2f2d4c84cd77f52b851dced5c87dea5f8d93ec1cecc7c4<br> [ **Linux App GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/CryptoTrust_LLC_pub.asc) A1D6 4A3B 496C B0F3 6E12 B46F 9A9F 520D 44EA 53D1" %}
 
 If you have an OnlyKey to set up, once you have installed the app proceed to [OnlyKey Setup](https://docs.crp.to/usersguide.html#onlykey-setup)
 
