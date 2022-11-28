@@ -29,6 +29,10 @@ The firmware is the software that runs on the OnlyKey itself. In order to load f
 
 OnlyKey firmware is open source and new features are added with each firmware release. A list of of supported features are available [here](https://docs.crp.to/features.html)
 
+## Loading OnlyKey Firmware
+
+Follow the upgrade guide [here](https://docs.onlykey.io/upgradeguide.html#loading-onlykey-firmware) to update OnlyKey firmware 
+
 ## Support
 
 Check out the [OnlyKey Support Forum](https://forum.onlykey.io)

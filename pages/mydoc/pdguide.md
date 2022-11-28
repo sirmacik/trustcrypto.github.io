@@ -11,7 +11,7 @@ folder: mydoc
 
 ## About Plausible Deniability
 
-Before setting up plausible deniability read the International Travel Edition Guide [here](https://docs.crp.to/ite.html). Once enabled, an OnlyKey with the Standard Edition firmware that is in plausible deniability mode is identical in functionality to an OnlyKey with the International Travel Edition (ITE) firmware. Since the ITE firmware has only one profile and does not utilize encryption a user may if forced to unlock their OnlyKey, unlock the plausible deniability profile. It is then plausible that the user's OnlyKey only has this one profile (the standard profile essentially becomes a hidden profile), and it is plausible that the user is not in possession of an encryption device (useful where encryption my be banned as the ITE firmware is encryption free).
+Before setting up plausible deniability read the International Travel Edition Guide [here](https://docs.crp.to/ite.html). Once enabled, an OnlyKey with the Standard Edition firmware that is in plausible deniability mode is identical in functionality to an OnlyKey with the International Travel Edition (ITE) firmware. Since the ITE firmware has only one profile and does not utilize any data encryption a user may if forced to unlock their OnlyKey, unlock the plausible deniability profile. It is then plausible that the user's OnlyKey only has this one profile (the standard profile essentially becomes a hidden profile), and it is plausible that the user is not in possession of a data encryption device (useful where encryption my be banned as the ITE firmware does not encrypt any data).
 
 ## Steps to Setup Plausible Deniability
 

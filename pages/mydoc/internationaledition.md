@@ -11,11 +11,11 @@ folder: mydoc
 
 ## What is the International Travel Edition?
 
-This version of OnlyKey firmware is designed to meet all international requirements in regards to encryption. It does this by not utilizing encryption at all. Because this version does not utilize encryption the device can be used in areas where encryption is forbidden and/or there are mandatory key disclosure requirements. This is particularly useful for international travel where the traveler would like to have secure portable access to accounts.
+This version of OnlyKey firmware is designed to meet all international requirements in regards to encryption. It does this by not utilizing encryption at all. Because this version does not encrypt any data on device it can be used in areas where data encryption is forbidden and/or there are mandatory key disclosure requirements. This is particularly useful for international travel where the traveler would like to have secure portable access to accounts.
 
 ## How are accounts secure without encryption?
 
-Even though there is no encryption, there is physical security of the accounts on the OnlyKey. This is accomplished through locking the flash memory and requiring a PIN code to access accounts. The accounts stored on the device can only be accessed with the correct PIN. Entering 10 incorrect PINs will completely wipe the device. Unlike a device like a flash/jump drive, the OnlyKey is locked so that there is no way of reading the data stored on the device.
+Even though data is not encrypted, there is physical security of the accounts on the OnlyKey. This is accomplished through locking the flash memory and requiring a PIN code to access accounts. The accounts stored on the device can only be accessed with the correct PIN. Entering 10 incorrect PINs will completely wipe the device. Unlike a device like a flash/jump drive, the OnlyKey is locked so that there is no way of reading the data stored on the device.
 
 ## Limited features
 
