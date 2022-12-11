@@ -257,7 +257,7 @@ You need to determine which keys to load to OnlyKey if you are generating your o
 
 If your key only has one subkey then the primary (master) key is typically used for signing and the subkey is used for decryption. This is the default for keys created with GnuPG and Mailvelope (OpenPGP.js).
 
-Once you determine which key is your used for signing and which key is used for decryption:
+Once you determine which key is used for signing and which key is used for decryption:
 - Load the decryption subkey into slot 1 of OnlyKey and check "set as decryption key".
 - Load the signing primary/subkey into slot 2 of OnlyKey and check "set as signature key".
 
