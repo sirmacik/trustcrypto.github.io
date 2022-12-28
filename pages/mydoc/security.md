@@ -165,6 +165,18 @@ OnlyKey firmware is developed by a small team of trusted developers located in t
 
 ## Advanced
 
+### About Differences Between OnlyKey and OnlyKey DUO
+
+1) With OnlyKey the PIN is entered on device only, with DUO it can be entered on device in a non-trusted setting but since the device only has three buttons to enter a 4,5,6 you have to long hold 1,2,3. For this reason the preferred way to enter the PIN for DUO in a trusted setting is to use the OnlyKey app to enter the PIN.
+
+2) With OnlyKey you have 24 slots, the first 12 slots are accessible with primary profile PIN, the second 12 slots are accessible with secondary profile PIN. DUO has all 24 slots accessible with one PIN.
+
+3) DUO does not require a PIN (easier to use) without a PIN it is similar to Yubikey and can be used for either a static password, or MFA (not both since there is no physical PIN protection). If you try to set both in the app on a device with no PIN the device will return an error. 
+
+4) Since the DUO has only three buttons, some of the button definitions are different which can be found [here](https://docs.onlykey.io/features.html#button-definitions).
+
+Both OnlyKey and OnlyKey DUO use the same hardware and firmware. 
+
 ### About OnlyKey PIN, profiles, key derivation, and encryption
 
 At a high level data at rest is encrypted via AES-256 using a random key that is encrypted by a key encryption key (kek). There is a lot going on to make this happen at a low level and this section is intended to highlight the unique features and methods used to encrypt data at rest.
