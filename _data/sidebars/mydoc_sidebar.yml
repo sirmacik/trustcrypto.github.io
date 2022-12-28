@@ -259,6 +259,10 @@ entries:
       url: /features.html#button-definitions
       output: web, pdf
 
+    - title: OnlyKey / OnlyKey DUO Differences
+      url: /features.html##onlykey-and-onlykey-duo-differences
+      output: web, pdf
+
     - title: Config Mode
       url: /security.html#config-mode
       output: web, pdf

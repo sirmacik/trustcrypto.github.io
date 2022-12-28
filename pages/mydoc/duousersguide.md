@@ -2,7 +2,7 @@
 title: OnlyKey DUO User's Guide
 tags: [OnlyKey, DUO, User's Guide]
 keywords: OnlyKey, DUO, User's Guide
-last_updated: Feb, 28, 2022
+last_updated: Dec, 28, 2022
 summary: The user's guide provides step-by-step instructions for configuring and using OnlyKey DUO.
 sidebar: mydoc_sidebar
 permalink: duousersguide.html
