@@ -205,5 +205,11 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 *   Hold button #1 for 10+ seconds to put OnlyKey DUO in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
 *   Hold button #1 for 10+ seconds to put OnlyKey DUO in config mode, then  Hold button #2 for 20+ seconds to restore OnlyKey DUO to factory defaults (also called [self-destruct feature](https://docs.crp.to/features.html#self-destruct-feature)).
 
+### ONLYKEY AND ONLYKEY DUO DIFFERENCES
+
+- OnlyKey DUO is a small form factor, three button, USB-A and USB-C security key. OnlyKey is a medium form factor, six button, USB-A security key.
+- OnlyKey requires on-device PIN, with OnlyKey DUO the PIN is optional.
+- OnlyKey and OnlyKey DUO both support the same features, detailed technical description of differences available [here](https://docs.onlykey.io/security.html#about-differences-between-onlykey-and-onlykey-duo).
+
 
 {% include links.html %}
