@@ -35,6 +35,10 @@ entries:
       url: /usersguide.html#initial-setup
       output: web, pdf
 
+    - title: Reset OnlyKey (Factory Default)
+      url: /usersguide.html#reset-default
+      output: web, pdf
+
     - title: Configure Basic Login Info
       url: /usersguide.html#all-about-slots
       output: web, pdf
@@ -117,6 +121,10 @@ entries:
 
     - title: Setting up OnlyKey DUO
       url: /duousersguide.html#initial-setup
+      output: web, pdf
+
+    - title: Reset OnlyKey (Factory Default)
+      url: /duousersguide.html#reset-default
       output: web, pdf
 
     - title: Configure Basic Login Info

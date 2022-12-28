@@ -65,7 +65,11 @@ If you wish to use your OnlyKey as a hardware password manager, enable other met
 
 Your device is now set up and will automatically reboot. 
 
-{% include tip.html content="If you ever need to wipe and restore your OnlyKey DUO to factory defaults you can do that by holding down button #1 on device for 10 seconds (device will flash red) then hold down button #2 for 20 seconds. All data on your device will be wiped and you can go through setup again." %}
+## Reset/Factory Default Device {#reset-default}
+
+If you ever need to wipe and restore your OnlyKey DUO to factory defaults you can do that by holding down button #1 on device for 10 seconds (device will flash red) then hold down button #2 for 20 seconds. All data on your device will be wiped and you can go through setup again.
+
+You can also use the Self-destruct PIN if one has been set.
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup accounts below***
 

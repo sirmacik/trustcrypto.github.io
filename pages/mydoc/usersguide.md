@@ -117,16 +117,11 @@ If you have already setup OnlyKey using quick setup proceed to [Account Setup](#
 
 Your device is now set up and will automatically reboot. You will be prompted to enter your PIN from now on when using the OnlyKey.
 
-{% include tip.html content="***Forget your PIN?***<br><br>
-If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:
-<br>
-<br>
-**Method #1** - Enter your self-destruct PIN.
-<br>
-<br>
-**Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking red. This is an intentional safeguard so that your OnlyKey will not be inadvertently wiped by repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid green light on that indicates that it is ready to set up." %}
+## Reset/Factory Default Device {#reset-default}
 
-*If you want to learn more about features like [Self-Destruct](https://docs.crp.to/features.html#self-destruct) and [Plausible Deniability](https://docs.crp.to/pdguide.html) see [OnlyKey Features](https://docs.crp.to/features.html).*
+If you ever need to wipe and restore your OnlyKey DUO to factory defaults you can do that by entering 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking red. This is an intentional safeguard so that your OnlyKey will not be inadvertently wiped by repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid green light on that indicates that it is ready to set up
+
+You can also use the Self-destruct PIN if one has been set.
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup accounts below***
 
