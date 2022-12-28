@@ -380,6 +380,8 @@ Chrome Extension available from the Chrome Web Store [here](https://chrome.googl
 
 {% include image.html file="image21.png" %}
 
+<i class="fa fa-arrow-down fa-3x"></i> **Next, let's assign a OATH-TOTP secret for MFA**
+
 ### Configure Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
 Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are four different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA OnlyKey will work with most sites that support 2FA - [http://www.dongleauth.com/](http://www.dongleauth.com/)
@@ -507,6 +509,8 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 #### Security Key - FIDO2, FIDO U2F, and WebAuthn {#universal-2nd-factor-u2f}
 
 No setup is required to use OnlyKey as a security key. When registering and authenticating OnlyKey as a security key you will see OnlyKey flash blue. To use OnlyKey as a security key follow the instructions given by the website where you wish to register OnlyKey. When using Onlykey as a security key you will see the light flash blue, press any button on the OnlyKey to register or login to a site. While your device is flashing blue typing is disabled in case you also have a slot set up for basic login. 
+
+{% include image.html file="fido2.gif" %}
 
 The terminology for security keys can be a bit confusing so here are some quick definitions to make sense of it.
 
@@ -698,54 +702,6 @@ DashLane supports Google Authenticator, Yubico® OTP, and Security Keys. The sec
 
 SmartLock is a password manager that is available in Google Chrome, it supports Google Authenticator and Security Keys. The security key (FIDO2 / U2F) option is the most secure option.
 
-## OpenPGP File Encryption {#openpgp}
-
-OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. There are two ways to use OnlyKey with OpenPGP.
-
-1) **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** - Provides a way to securely use OnlyKey for OpenPGP in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. This provides encryption everywhere on-the-go and supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+). More information on mobile support [here](https://docs.crp.to/mobile.html).
-2) **[OnlyKey GPG Agent](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide)** - Provides a way to securely use OnlyKey for OpenPGP on a local computer. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use GPG to do things like sign emails, git commits, software packages etc.
-
-{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt.png)](https://vimeo.com/374653109)" %}
-
-{% include note.html content="Private keys are securely stored on OnlyKey and are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. Additionally, physical user presence is required to process secure messages/files. This is in contrast to Smart Cards which only require a PIN code that can be captured and replayed without physical user presence." %}
-
-### How WebCrypt works {#openpgp-how}
-
-{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase search tool to search Keybase users by:<br>
-- Twitter, Github, Reddit, or Hackernews Usernames<br>
-- Web domains<br>
-- PGP fingerprint<br>
-- Or Automatically search for best match" type="default" %}
-
-{% include image.html file="user-search.jpg" %}
-
-{% include callout.html content="**Step 2. Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to [https://apps.crp.to/encrypt](https://apps.crp.to/encrypt) to send a secure message or browse to [https://apps.crp.to/encrypt-file](https://apps.crp.to/encrypt-file) to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username as the recipient. " type="default" %}
-
-{% include image.html file="webcrypt1.png" %}
-
-{% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to [https://apps.crp.to/decrypt](https://apps.crp.to/decrypt) or [https://apps.crp.to/decrypt-file](https://apps.crp.to/decrypt-file). " type="default" %}
-
-{% include image.html file="webcrypt2.png" %}
-
-{% include tip.html content="
-You can receive encrypted messages and files from anyone, no tech skills are required!<br><br>
-Receiving encrypted files is as easy as putting a custom link in your email signature:<br><br>
-**Bob Smith**<br>
-**Email:** Bobsmith@bobsmith.com<br>
-**Phone:** 111.222.3333<br>
-*Send me a secure [message](https://apps.crp.to/app/encrypt?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/app/encrypt-file?type=e&recipients=bobsmith2)*<br>
-*[More info](https://onlykey.io/pages/webcrypt)*<br>
-<br>
-- Link the text **'message'** to: https://apps.crp.to/app/encrypt?type=e&recipients=<mark>bobsmith2</mark>
-<br><br>
-- Link the text **'file'** to: https://apps.crp.to/app/encrypt-file?type=e&recipients=<mark>bobsmith2</mark>
-<br><br>
-- Change <mark>bobsmith2</mark> in the link to your Keybase user name
-<br><br>
-- Add a **'More info'** link to: https://onlykey.io/pages/webcrypt<br>
-This link provides information to let your sender know what WebCrypt is, why it's secure, and includes a quick 30 second video that will shows how to use it.<br>
-[![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
-
 ## Preferences {#preferences}
 
 OnlyKey has several customizable preferences that can be accessed from the preferences tab of the configuration app.
@@ -814,12 +770,6 @@ OnlyKey supports HMAC challenge-response. By default, user input (button press) 
 ### Backup Key Mode {#backup-key-mode}
 
 You can change your backup key/passphrase at any time by entering your PIN to put the device in config mode. By setting backup key mode to locked, the backup key/passphrase may not be changed. This setting provides extra security so that even if an adversary has your PIN and has physical access to your device they would not be able to backup and restore your data.
-
-<!---
-
-{% include important.html content="With OnlyKey Go, if no PIN is set the backup key is locked by default." %}
-
--->
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
@@ -918,7 +868,12 @@ The OnlyKey stores private keys. These private keys are used for three different
 
 1.  **Signing and Encrypted Messages/Files (OpenPGP)**
   - **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** - Provides a way to securely use OnlyKey for OpenPGP in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. This provides encryption everywhere on-the-go and supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+). More information on mobile support [here](https://docs.crp.to/mobile.html).
+
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/webcrypt.png)](https://vimeo.com/374653109)" %}
+  
   - **[OnlyKey GPG Agent](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide)** - Provides a way to securely use OnlyKey for OpenPGP on a local computer. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use GPG to do things like sign emails, git commits, software packages etc.
+{% include image.html file="agent.gif" %}
+
 2.  **SSH Authentication** - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure. For information on using OnlyKey for SSH authentication see [OnlyKey SSH Agent](https://docs.crp.to/onlykey-agent.html#ssh-agent-quickstart-guide).
 3.  **Secure Encrypted Backup** - This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For information on backing up OnlyKey see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
 
@@ -976,7 +931,7 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ### Download Firmware
 
-- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.2-prod/Signed_OnlyKey_3_0_2_STD.txt" target="_blank" download>OnlyKey firmware</a>
+- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.4-prod/Signed_OnlyKey_3_0_4_STD.txt" target="_blank" download>OnlyKey firmware</a>
 
 ### Load Signed Firmware
 
@@ -985,8 +940,8 @@ There is a tab named Firmware in the app. This may be used to load the latest fi
 - Go to the Firmware tab in the app
 - Follow the instructions in the app to load firmware
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_2_STD.txt SHA 256 checksum:<br>
-d547df850e963ca0c49f2b04dd91cd6dd845c00affbe3b9b552042d5ad196ce0" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_4_STD.txt SHA 256 checksum:<br>
+f895100a2f828b66ec5335fd676ef659daf87d51bfeecca5fb8bf9b7c8e259bd" %}
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 

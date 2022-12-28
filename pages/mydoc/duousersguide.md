@@ -741,15 +741,15 @@ There is a tab named Firmware in the app. This may be used to load the latest fi
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/firmware-duo.png)
 
-- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.2-prod/Signed_OnlyKey_3_0_2_STD.txt" target="_blank" download>OnlyKey DUO firmware</a>
+- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.4-prod/Signed_OnlyKey_3_0_4_STD.txt" target="_blank" download>OnlyKey DUO firmware</a>
 
 ### Load Signed Firmware
 
 - Go to the Firmware tab in the app
 - Follow the instructions in the app to load firmware
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_2_STD.txt SHA 256 checksum:<br>
-d547df850e963ca0c49f2b04dd91cd6dd845c00affbe3b9b552042d5ad196ce0" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_4_STD.txt SHA 256 checksum:<br>
+f895100a2f828b66ec5335fd676ef659daf87d51bfeecca5fb8bf9b7c8e259bd" %}
 
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
