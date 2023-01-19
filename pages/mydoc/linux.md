@@ -14,7 +14,7 @@ folder: mydoc
 
 ### Step 1 - Linux UDEV Rule {#udev-rule}
 
-Linux requires a UDEV rule in order for non-root users to be able to communicate with USB devices. Installing the [OnlyKey App .deb](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey_5.3.3_amd64.deb) will also install the UDEV rule automatically or to install manually:
+Linux requires a UDEV rule in order for non-root users to be able to communicate with USB devices. Installing the [OnlyKey App .deb](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey_5.3.6_amd64.deb) will also install the UDEV rule automatically or to install manually:
 
 - Go to [https://github.com/trustcrypto/trustcrypto.github.io/blob/master/49-onlykey.rules](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules) and download or create a copy of the file named `49-onlykey.rules` into the Linux directory: `/etc/udev/rules.d/`.
 
