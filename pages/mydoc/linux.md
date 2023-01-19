@@ -32,7 +32,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 
 For Debian user's install the DEB below.
 
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey_5.3.3_amd64.deb)
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey_5.3.6_amd64.deb)
 
 For other Linux users you may install the OnlyKey app via [snapcraft](https://snapcraft.io/onlykey-app)
 
