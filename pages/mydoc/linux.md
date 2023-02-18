@@ -25,7 +25,7 @@ To complete this via terminal issue the following commands:
 ```
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules && udevadm trigger
+$ sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
 ### Step 2 - Install OnlyKey Desktop App {#install-app}
