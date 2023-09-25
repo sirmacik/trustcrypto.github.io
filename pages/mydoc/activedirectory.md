@@ -46,7 +46,7 @@ To deploy security keys on Azure AD some configuration is required:
 
 ![Azure AD Authentication methods](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/authentication.png)
 
-3) Select "Add AAGUID" under "Restrict specific keys" and add OnlyKey's AAGUID `79d699df-0191-4b10-b903-5467e7ce8231`
+3) Select "Add AAGUID" under "Restrict specific keys" and add OnlyKey's AAGUID `998f358b-2dd2-4cbe-a43a-e8107438dfb3`
 
 ## Threat Models Mitigated with OnlyKey Protected Windows Accounts
 
