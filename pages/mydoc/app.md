@@ -77,7 +77,7 @@ The Chrome app has limited features and should only be used where the desktop ap
 <br>
 <br>
 
-### Unsupported ARM Operating Systems
+### ARM Operating Systems
 
 {% include callout.html content="**Step 1.** Download the OnlyKey Chrome App Zip file [here](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey_Chrome_App.zip)." type="default" %}
 
