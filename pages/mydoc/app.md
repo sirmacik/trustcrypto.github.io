@@ -44,7 +44,7 @@ For information on using the app with OnlyKey see the [OnlyKey User's Guide](htt
 
 {% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions [here](https://docs.crp.to/linux.html), additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
-[<i class="fa fa-chrome fa-2x"></i> **Chrome OS / Chrome App**](https://docs.crp.to/app.html#onlykey-chrome-app-end-of-life)
+[<i class="fa fa-chrome fa-2x"></i> **Chrome OS / Chrome App**](https://docs.onlykey.io/app.html#onlykey-chrome-app)
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
