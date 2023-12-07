@@ -2,7 +2,7 @@
 title: OnlyKey App
 tags: [OnlyKey App]
 keywords: OnlyKey, App
-last_updated: June, 18, 2021
+last_updated: Dec, 7, 2023
 summary: The OnlyKey App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, and Linux.
 sidebar: mydoc_sidebar
 permalink: app.html
@@ -81,11 +81,9 @@ The Chrome app has limited features and should only be used where the desktop ap
 
 {% include callout.html content="**Step 1.** Download the OnlyKey Chrome App Zip file [here](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey_Chrome_App.zip)." type="default" %}
 
-{% include callout.html content="**Step 2.** Unzip " type="default" %}
+{% include callout.html content="**Step 2.** Go to the Extensions settings in your Chrome, Edge, or Brave browser (chrome://extensions, edge://extensions, or brave://extensions) and select 'Developer Mode' to enable loading extensions" type="default" %}
 
-{% include callout.html content="**Step 3.** Go to the Extensions settings in your Chrome, Edge, or Brave browser (chrome://extensions, edge://extensions, or brave://extensions) and select 'Developer Mode' to enable loading extensions" type="default" %}
-
-{% include callout.html content="**Step 4.** Unzip the OnlyKey Chrome App Zip file and drag the folder onto the Extensions screen. This will load the unpacked OnlyKey Chrome App." type="default" %}
+{% include callout.html content="**Step 3.** Unzip the OnlyKey Chrome App Zip file and drag the folder onto the Extensions screen. This will load the unpacked OnlyKey Chrome App." type="default" %}
 
 ## Support
 
