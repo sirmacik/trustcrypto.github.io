@@ -2,7 +2,7 @@
 title: Using OnlyKey with Virtual Machines
 tags: [OnlyKey, vm, vmware, virtual]
 keywords: OnlyKey, vm, vmware, virtualbox, virtual
-last_updated: Feb, 27, 2020
+last_updated: Dec, 7, 2023
 summary: How to use OnlyKey with VMware and Virtualbox
 sidebar: mydoc_sidebar
 permalink: virtualmachines.html
@@ -16,9 +16,10 @@ OnlyKey is supported on Virtual Machines in the same way as USB keyboards (USB H
 ### VMware Workstation or VMware Fusion Support
 
 - With the VM shut down, open the .vmx file in a text editor
-- Add this line to the .vmx file and save
+- Add these two lines to the .vmx file and save
 ```
 usb.generic.allowHID = "TRUE"
+usb.generic.allowLastHID = "TRUE"
 ```
 - Restart the VM and now you will be able to connect OnlyKey to the VM
 
