@@ -2,7 +2,7 @@
 title: OnlyKey App
 tags: [OnlyKey App]
 keywords: OnlyKey, App
-last_updated: June, 18, 2021
+last_updated: Dec, 7, 2023
 summary: The OnlyKey App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, and Linux.
 sidebar: mydoc_sidebar
 permalink: app.html
@@ -44,7 +44,7 @@ For information on using the app with OnlyKey see the [OnlyKey User's Guide](htt
 
 {% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions [here](https://docs.crp.to/linux.html), additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
-[<i class="fa fa-chrome fa-2x"></i> **Chrome OS / Chrome App**](https://docs.onlykey.io/app.html#onlykey-chrome-app)
+[<i class="fa fa-chrome fa-2x"></i> **ChromeOS / ARM**](https://docs.onlykey.io/app.html#onlykey-chrome-app)
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
@@ -52,11 +52,13 @@ For information on using the app with OnlyKey see the [OnlyKey User's Guide](htt
 
 If you have an OnlyKey to set up, once you have installed the app proceed to [OnlyKey Setup](https://docs.crp.to/usersguide.html#onlykey-setup)
 
-### OnlyKey Chrome App (End of life)
+### OnlyKey Chrome App 
 
-Google is discontinuing Chrome app support on all operating systems. For now, the Chrome app is still available and Google has extended support (June 2021 for Windows, Mac, Linux and June 2022 for Chrome OS) but Google has announced that it will be disabled in a future version of Chrome. The Chrome app will continue to be maintained but users should migrate to the desktop app.
+The Chrome app has limited features and should only be used where the desktop app is unavailable such as on ChromeOS or unsupported ARM based operating systems. 
 
-{% include callout.html content="**Step 1.** Open the Chrome (Chromium, Brave, Edge) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
+### ChromeOS
+
+{% include callout.html content="**Step 1.** Open the Chrome (Chromium, Brave, Edge) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/)" type="default" %}
 
 {% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
 
@@ -75,6 +77,13 @@ Google is discontinuing Chrome app support on all operating systems. For now, th
 <br>
 <br>
 
+### ARM Operating Systems
+
+{% include callout.html content="**Step 1.** Download the OnlyKey Chrome App Zip file [here](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey_Chrome_App.zip)." type="default" %}
+
+{% include callout.html content="**Step 2.** Go to the Extensions settings in your Chrome, Edge, or Brave browser (chrome://extensions, edge://extensions, or brave://extensions) and select 'Developer Mode' to enable loading extensions" type="default" %}
+
+{% include callout.html content="**Step 3.** Unzip the OnlyKey Chrome App Zip file and drag the folder onto the Extensions screen. This will load the unpacked OnlyKey Chrome App." type="default" %}
 
 ## Support
 
