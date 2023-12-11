@@ -83,7 +83,7 @@ The Chrome app has limited features and should only be used where the desktop ap
 
 {% include callout.html content="**Step 2.** Go to the Extensions settings in your Chrome, Edge, or Brave browser (chrome://extensions, edge://extensions, or brave://extensions) and select 'Developer Mode' to enable loading extensions" type="default" %}
 
-{% include callout.html content="**Step 3.** Unzip the OnlyKey Chrome App Zip file and drag the folder onto the Extensions screen. This will load the unpacked OnlyKey Chrome App." type="default" %}
+{% include callout.html content="**Step 3.** Unzip the OnlyKey Chrome App Zip file and select 'Load Unpacked' on the Extensions screen. Select the OnlyKey_Chrome_App folder, this will load the unpacked OnlyKey Chrome App." type="default" %}
 
 ## Support
 
