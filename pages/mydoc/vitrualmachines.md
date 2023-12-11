@@ -19,6 +19,7 @@ OnlyKey is supported on Virtual Machines in the same way as USB keyboards (USB H
 - Add this line to the .vmx file and save
 ```
 usb.generic.allowHID = "TRUE"
+usb.generic.allowLastHID = "TRUE"
 ```
 - Restart the VM and now you will be able to connect OnlyKey to the VM
 
