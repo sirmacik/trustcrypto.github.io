@@ -2,7 +2,7 @@
 title: International Travel Edition Guide
 tags: [OnlyKey, International Travel Edition, Plausible Deniability]
 keywords: OnlyKey, International Travel Edition, Plausible Deniability
-last_updated: Nov, 6, 2018
+last_updated: June, 6, 2024
 summary: Follow this guide to use the International Travel Edition OnlyKey
 sidebar: mydoc_sidebar
 permalink: ite.html
@@ -46,12 +46,10 @@ Features not included in the International Travel Edition OnlyKey that are avail
 
 It is easy to switch between the International Travel Edition firmware and the Standard Edition firmware. Keep in mind that switching from the Standard Edition to the International Travel Edition will disable features not available such as the second profile. In order to switch to Standard Edition firmware ensure that your International Travel Edition OnlyKey is in a factory default state and select [Load Firmware] in the OnlyKey App.
 
-- Download <a href="Signed_OnlyKey_2_1_0_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_0_STD.txt">OnlyKey Standard Edition firmware</a>
-- Download <a href="Signed_OnlyKey_2_1_0_IN_TRVL.txt" target="_blank" download="Signed_OnlyKey_2_1_0_IN_TRVL.txt">OnlyKey International Travel Edition firmware</a>
+- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.4-prod/Signed_OnlyKey_3_0_4_STD.txt" target="_blank" download>OnlyKey Standard Edition firmware</a>
+- Download <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v3.0.4-prod/Signed_OnlyKey_3_0_4_STD.txt" target="_blank" download>OnlyKey International Travel Edition firmware</a>
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_2_1_0_STD.txt SHA 256 checksum:<br>
-c4c2fd05c89fa164dae069c57deea78f2adc665c69e4e671e7483c2658339c9a<br>Signed_OnlyKey_2_1_0_IN_TRVL.txt SHA 256 checksum:<br>
-dd2a955f029dce16dd48b05542efa8b37d83ceec24fa668c1002dee309fb172d" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_3_0_4_STD.txt f895100a2f828b66ec5335fd676ef659daf87d51bfeecca5fb8bf9b7c8e259bd<br>Signed_OnlyKey_3_0_4_IN_TRVL.txt 0c4d2f33c5b934c422b7bc9642d0f696c5674c2cf307756c5dee0933a70cd745" %}
 
 - Select the [Load Firmware] button as shown below and follow the instructions in the app to load firmware
 
