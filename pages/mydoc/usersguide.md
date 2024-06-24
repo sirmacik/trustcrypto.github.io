@@ -25,19 +25,15 @@ folder: mydoc
 
 ## Setting up OnlyKey {#initial-setup}
 
-There are two options for setting up your OnlyKey.
-
-- [OnlyKey Quick Setup](#quick-setup) (No app required, 1-3 minute setup time)
-
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372991865) that demonstrates setting up a new OnlyKey with Quick Setup<br>[![How-To:  Setting up OnlyKey with Quick Setup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/quick-setup.png)](https://vimeo.com/372991865)" %}
-
-- [OnlyKey Setup Using OnlyKey App](#onlykey-setup) (App install required, 5-10 minute setup time)
+[OnlyKey Setup Using OnlyKey App](#app-desktop) (App install required, 5-10 minute setup time)
 
 {% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372946883) that demonstrates setting up a new OnlyKey using the OnlyKey App<br>[![How-To: Setting up OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/video-setup.png)](https://vimeo.com/372946883)" %}
 
 ### OnlyKey Quick Setup {#quick-setup}
 
-{% include important.html content="Quick setup is a way to set up a new OnlyKey with no apps required. However, a computer with a US layout keyboard is required and to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
+{% include important.html content="Quick setup is an alternative way to set up a new OnlyKey with no apps required. However, a computer with a US layout keyboard is required and to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
+
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372991865) that demonstrates setting up a new OnlyKey with Quick Setup<br>[![How-To:  Setting up OnlyKey with Quick Setup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/quick-setup.png)](https://vimeo.com/372991865)" %}
 
 To complete OnlyKey quick setup follow the instructions below:
 
