@@ -883,6 +883,8 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 
 ### Backup With OnlyKey App {#backup-with-onlykey-app}
 
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/967904007) that demonstrates backing up OnlyKey using the OnlyKey App<br>[![How-To: OnlyKey Backup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/backup.png)](https://vimeo.com/967904007)" %}
+
 {% include callout.html content="**Step 1.** First, you must have a backup passphrase or key set on your OnlyKey." type="default" %}
 
 {% include callout.html content="**Step 2.** Click on the Backup/Restore tab of the OnlyKey app." type="default" %}
