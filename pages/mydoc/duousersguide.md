@@ -75,7 +75,7 @@ You can also use the Self-destruct PIN if one has been set.
 
 ## Setting up accounts {#account-setup}
 
-Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/set-password.jpeg)](https://vimeo.com/372894554)
+Prefer a how-to video? Watch one [here](https://vimeo.com/967163806) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup New OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/set-password.jpeg)](https://vimeo.com/967163806)
 
 ### Configure Basic Login Info {#all-about-slots}
 
@@ -694,6 +694,8 @@ To use OnlyKey WebCrypt or OnlyKey Agent with your own OpenPGP keys ([stored key
 The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the go. The way that this works is that the OnlyKey encrypts everything on your OnlyKey using an encryption key and then types it out. This allows saving the backup in a text file or email on any computer.
 
 ### Backup With OnlyKey App {#backup-with-onlykey-app}
+
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/967904007) that demonstrates backing up OnlyKey using the OnlyKey App<br>[![How-To: OnlyKey Backup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/backup.png)](https://vimeo.com/967904007)" %}
 
 {% include callout.html content="**Step 1.** First, you must have a backup passphrase or key set on your OnlyKey." type="default" %}
 

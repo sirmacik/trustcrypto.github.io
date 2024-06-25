@@ -25,19 +25,15 @@ folder: mydoc
 
 ## Setting up OnlyKey {#initial-setup}
 
-There are two options for setting up your OnlyKey.
+[OnlyKey Setup Using OnlyKey App](#app-desktop) (App install required, 5-10 minute setup time)
 
-- [OnlyKey Quick Setup](#quick-setup) (No app required, 1-3 minute setup time)
-
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372991865) that demonstrates setting up a new OnlyKey with Quick Setup<br>[![How-To:  Setting up OnlyKey with Quick Setup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/quick-setup.png)](https://vimeo.com/372991865)" %}
-
-- [OnlyKey Setup Using OnlyKey App](#onlykey-setup) (App install required, 5-10 minute setup time)
-
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372946883) that demonstrates setting up a new OnlyKey using the OnlyKey App<br>[![How-To: Setting up OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/video-setup.png)](https://vimeo.com/372946883)" %}
+Prefer a how-to video? Watch one [here](https://vimeo.com/967163806) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup New OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/set-password.jpeg)](https://vimeo.com/967163806)
 
 ### OnlyKey Quick Setup {#quick-setup}
 
-{% include important.html content="Quick setup is a way to set up a new OnlyKey with no apps required. However, a computer with a US layout keyboard is required and to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
+{% include important.html content="Quick setup is an alternative way to set up a new OnlyKey with no apps required. However, a computer with a US layout keyboard is required and to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
+
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372991865) that demonstrates setting up a new OnlyKey with Quick Setup<br>[![How-To:  Setting up OnlyKey with Quick Setup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/quick-setup.png)](https://vimeo.com/372991865)" %}
 
 To complete OnlyKey quick setup follow the instructions below:
 
@@ -886,6 +882,8 @@ To use OnlyKey WebCrypt or OnlyKey Agent with your own OpenPGP keys ([stored key
 The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the go. The way that this works is that the OnlyKey encrypts everything on your OnlyKey using an encryption key and then types it out. This allows saving the backup in a text file or email on any computer.
 
 ### Backup With OnlyKey App {#backup-with-onlykey-app}
+
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/967904007) that demonstrates backing up OnlyKey using the OnlyKey App<br>[![How-To: OnlyKey Backup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/backup.png)](https://vimeo.com/967904007)" %}
 
 {% include callout.html content="**Step 1.** First, you must have a backup passphrase or key set on your OnlyKey." type="default" %}
 
