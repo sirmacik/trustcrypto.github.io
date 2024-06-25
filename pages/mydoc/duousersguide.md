@@ -75,7 +75,7 @@ You can also use the Self-destruct PIN if one has been set.
 
 ## Setting up accounts {#account-setup}
 
-Prefer a how-to video? Watch one [here]([https://vimeo.com/372894554](https://vimeo.com/372894554)) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup New OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/set-password.jpeg)](https://vimeo.com/372894554)
+Prefer a how-to video? Watch one [here]([https://vimeo.com/372894554](https://vimeo.com/967163806)) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup New OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/pages/images/set-password.jpeg)](https://vimeo.com/967163806)
 
 ### Configure Basic Login Info {#all-about-slots}
 
